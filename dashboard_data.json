@@ -45,15 +45,17 @@
         },
         {
           "label": "Study Session 4",
-          "done": false
+          "done": true
         },
         {
           "label": "Create index card for exam",
           "done": true
         }
       ],
-      "archived": false,
-      "dueBeforeDay": true
+      "archived": true,
+      "dueBeforeDay": true,
+      "completedOn": "Apr 6",
+      "dueRaw": "Apr 7"
     },
     {
       "id": "dnd",
@@ -79,25 +81,28 @@
         },
         {
           "label": "Road map to new area",
-          "done": false
+          "done": true
         },
         {
           "label": "Goblin camp map + goblin NPCs",
-          "done": false
+          "done": true
         },
         {
           "label": "Fishing village map (main encounter)",
-          "done": false
+          "done": true
         },
         {
           "label": "Encounter loot",
-          "done": false
+          "done": true
         },
         {
           "label": "Innkeeper dialogue",
-          "done": false
+          "done": true
         }
-      ]
+      ],
+      "archived": true,
+      "completedOn": "Apr 10",
+      "dueRaw": "Apr 10"
     },
     {
       "id": "register",
@@ -128,13 +133,16 @@
         },
         {
           "label": "Register for classes",
-          "done": false
+          "done": true
         },
         {
           "label": "Create Schedule",
           "done": true
         }
-      ]
+      ],
+      "dueRaw": "Apr 14",
+      "archived": true,
+      "completedOn": "Apr 13"
     },
     {
       "id": "taxes",
@@ -144,35 +152,38 @@
       "chunks": [
         {
           "label": "Find best way to access all tax documents",
-          "done": false
+          "done": true
         },
         {
           "label": "Secure current year documents and filings",
-          "done": false
+          "done": true
         },
         {
           "label": "Figure out how to file for previous years",
-          "done": false
+          "done": true
         },
         {
           "label": "Begin filling out relevant forms",
-          "done": false
+          "done": true
         },
         {
           "label": "Determine total amount due or owed",
-          "done": false
+          "done": true
         },
         {
           "label": "Talk to dad about amount due",
-          "done": false
+          "done": true
         }
-      ]
+      ],
+      "dueRaw": "Apr 15",
+      "archived": true,
+      "completedOn": "Apr 16"
     },
     {
       "id": "gov",
       "title": "Public meeting: government",
       "due": "May 4",
-      "daysLeft": 33,
+      "daysLeft": 13,
       "chunks": [
         {
           "label": "Choose event",
@@ -184,37 +195,41 @@
         },
         {
           "label": "Fill out pre-meeting section",
-          "done": false
+          "done": true,
+          "scheduledDate": "2026-04-11"
         },
         {
           "label": "Fill out pre-meeting agenda section",
-          "done": false,
-          "note": "After agenda posts"
+          "done": true,
+          "note": "After agenda posts",
+          "scheduledDate": "2026-04-12"
         },
         {
           "label": "Attend meeting",
-          "done": false
+          "done": true
         },
         {
           "label": "Fill out meeting section",
-          "done": false
+          "done": true
         },
         {
           "label": "Fill out post-meeting section",
-          "done": false
+          "done": true
         },
         {
           "label": "Edit and finalize",
-          "done": false
+          "done": true
         }
       ],
-      "archived": false
+      "archived": true,
+      "dueRaw": "May 4",
+      "completedOn": "May 3"
     },
     {
       "id": "policy",
       "title": "Policy case study",
       "due": "May 8",
-      "daysLeft": 37,
+      "daysLeft": 17,
       "chunks": [
         {
           "label": "Select policy + determine framing",
@@ -222,30 +237,32 @@
         },
         {
           "label": "Explore context around the policy",
-          "done": false
+          "done": true
         },
         {
           "label": "Explore divisions of political power",
-          "done": false
+          "done": true
         },
         {
           "label": "Identify government actors (name names)",
-          "done": false
+          "done": true
         },
         {
           "label": "Identify interest groups and opposition",
-          "done": false
+          "done": true
         },
         {
           "label": "Evaluate policy and predict future",
-          "done": false
+          "done": true
         },
         {
           "label": "Compile, format, and submit",
-          "done": false
+          "done": true
         }
       ],
-      "archived": false
+      "archived": true,
+      "dueRaw": "May 8",
+      "completedOn": "May 7"
     },
     {
       "id": "hume-and-kant-exam-1775323341589",
@@ -261,39 +278,568 @@
         },
         {
           "label": "Study Session 1: Open your notes and list every major topic Hume covers — just make the list, nothing else",
-          "done": false
+          "done": true
         },
         {
           "label": "Study Session 2: Open your notes and list every major topic Kant covers — just make the list, nothing else",
-          "done": false
+          "done": true
         },
         {
           "label": "Study Session 3: Pick the 3 hardest Hume concepts from your list and explain each one out loud or in writing in your own words",
-          "done": false,
+          "done": true,
           "note": "Use your uploaded docs to check yourself after"
         },
         {
           "label": "Study Session 4: Pick the 3 hardest Kant concepts from your list and explain each one out loud or in writing in your own words",
-          "done": false,
+          "done": true,
           "note": "Use your uploaded docs to check yourself after"
         },
         {
           "label": "Study Session 5: Do a timed practice run — answer 3-5 likely exam questions from memory, then review gaps",
-          "done": false,
+          "done": true,
           "note": "Complete this at least 1 day before April 13th"
         },
         {
           "label": "Do Practice exams in Claude",
-          "done": false
+          "done": true
         },
         {
           "label": "Practice Exams again",
-          "done": false
+          "done": true
         }
-      ]
+      ],
+      "dueRaw": "Apr 13",
+      "archived": true,
+      "completedOn": "Apr 13"
+    },
+    {
+      "id": "texas-history-hw-3-1775938429614",
+      "title": "Texas History HW 3",
+      "due": "May 14",
+      "dueBeforeDay": false,
+      "chunks": [
+        {
+          "label": "Pick your 8 documents: Skim through Chapters 13–17 of Texas Voices and circle or list 8 primary source documents that each have 3 Thought Questions after them (skip any that only have 1 question after a picture).",
+          "done": true
+        },
+        {
+          "label": "Read Document 1 and answer all 3 of its Thought Questions in a few sentences each.",
+          "done": true
+        },
+        {
+          "label": "Read Documents 2 & 3 and answer all 3 Thought Questions for each.",
+          "done": true
+        },
+        {
+          "label": "Read Documents 4 & 5 and answer all 3 Thought Questions for each.",
+          "done": true
+        },
+        {
+          "label": "Read Documents 6 & 7 and answer all 3 Thought Questions for each.",
+          "done": true
+        },
+        {
+          "label": "Read Document 8 and answer all 3 of its Thought Questions, then do a quick pass to make sure every document has all 3 answers filled in.",
+          "done": true
+        },
+        {
+          "label": "Format and submit: Organize your answers clearly (label each document and question), do a final read-through, and turn it in.",
+          "done": true
+        }
+      ],
+      "dueRaw": "May 14 2026",
+      "archived": true,
+      "completedOn": "May 14"
+    },
+    {
+      "id": "history-textbook-rea-1776007492624",
+      "title": "History Textbook Readings",
+      "due": "May 12",
+      "dueRaw": "May 12",
+      "dueBeforeDay": true,
+      "chunks": [
+        {
+          "label": "Read Ch. 12 (all), pp. 299–319 – Progressive Era / Jim Ferguson",
+          "done": true
+        },
+        {
+          "label": "Read Ch. 13 (all), pp. 325–349 – The 1920s",
+          "done": true
+        },
+        {
+          "label": "Read Ch. 14, pp. 355–360 – Beginning of the Great Depression",
+          "done": true
+        },
+        {
+          "label": "Read Ch. 14, pp. 361–367 – Texas and the New Deal I",
+          "done": true
+        },
+        {
+          "label": "Read Ch. 14, pp. 367–379 – Texas and the New Deal II",
+          "done": true
+        },
+        {
+          "label": "Read Ch. 15 (all), pp. 385–405 – Texas and World War II",
+          "done": true
+        },
+        {
+          "label": "Read Ch. 16, pp. 411–435 – Texas in the 1950s",
+          "done": true
+        },
+        {
+          "label": "Read Ch. 17, pp. 441–449 – The 1960s I",
+          "done": true
+        }
+      ],
+      "archived": true,
+      "completedOn": "May 12"
+    },
+    {
+      "id": "final-exam-tx-histor-1776790989524",
+      "title": "Final Exam TX History may 12",
+      "due": "May 12",
+      "dueBeforeDay": true,
+      "chunks": [
+        {
+          "label": "Complete all reading sections (see Reading List project)",
+          "done": true
+        },
+        {
+          "label": "Go through list of key terms and scale each one based on understanding",
+          "done": true
+        },
+        {
+          "label": "Look up and review only the terms you blanked on or felt shaky about",
+          "done": true
+        },
+        {
+          "label": "Take your first mock quiz or practice test",
+          "done": true
+        },
+        {
+          "label": "Take a second mock quiz or practice test (different questions if possible)",
+          "done": true
+        },
+        {
+          "label": "Do a final mock test timed like the real exam",
+          "done": true
+        },
+        {
+          "label": "Make your one allowed note card to bring to class",
+          "done": true
+        }
+      ],
+      "archived": true,
+      "completedOn": "May 12"
+    },
+    {
+      "id": "mother-s-day-1777475727799",
+      "title": "Mother's Day",
+      "due": "May 10",
+      "dueBeforeDay": true,
+      "chunks": [
+        {
+          "label": "Spend 5 min thinking about one thing your mom loves or has mentioned lately",
+          "done": true
+        },
+        {
+          "label": "Open Amazon (or one store) and search that one thing — set a 10 min timer so you don't spiral",
+          "done": true
+        },
+        {
+          "label": "Pick ONE gift under your budget and add it to cart — don't overthink it, she'll love it",
+          "done": true
+        },
+        {
+          "label": "Check shipping estimate to make sure it arrives by May 9",
+          "done": true
+        },
+        {
+          "label": "Complete the purchase",
+          "done": true
+        },
+        {
+          "label": "Go to a drugstore or dollar section and grab a card (or open Canva/a free e-card site if easier)",
+          "done": true
+        },
+        {
+          "label": "Write 2-3 sentences in the card — a memory, something you appreciate, and 'I love you'",
+          "done": true
+        }
+      ],
+      "archived": true,
+      "completedOn": "May 12"
+    },
+    {
+      "id": "arendt-reading-quiz--1777826861035",
+      "title": "arendt reading quiz 2",
+      "due": "May 4, 2026",
+      "dueBeforeDay": false,
+      "chunks": [
+        {
+          "label": "Skim the Arendt text: read only the first and last paragraph of each section to get the big picture (20-30 min)",
+          "done": true
+        },
+        {
+          "label": "Read the Arendt text fully in one sitting — use a timer, 25 min on / 5 min off (Pomodoro)",
+          "done": true
+        },
+        {
+          "label": "Read the professor's companion chapter — highlight 3-5 key ideas that connect to the Arendt text",
+          "done": true
+        },
+        {
+          "label": "Write 5 questions you think could show up on the quiz based on your reading",
+          "done": true
+        },
+        {
+          "label": "Ask Claude to run a practice quiz on the Arendt text (10-15 questions)",
+          "done": true
+        },
+        {
+          "label": "Review any questions you missed and re-read those sections",
+          "done": true
+        },
+        {
+          "label": "Do one final practice quiz with Claude to confirm you're ready",
+          "done": true
+        }
+      ],
+      "archived": true,
+      "completedOn": "May 4"
+    },
+    {
+      "id": "presidential-candida-1779223534030",
+      "title": "Presidential Candidate Essay",
+      "due": "May 24",
+      "dueBeforeDay": false,
+      "chunks": [
+        {
+          "label": "Re-read the assignment instructions in the MODULE titled 'Writing Assignments & Presentations' and pick 1 person you admire — they don't have to be a politician or even alive.",
+          "done": true
+        },
+        {
+          "label": "Open the library database webguide (also in that MODULE) and find 3 academic sources about your chosen candidate.",
+          "done": true
+        },
+        {
+          "label": "Copy the 3 source links/titles somewhere safe (Notes app, doc, anywhere) so you don't lose them.",
+          "done": true
+        },
+        {
+          "label": "Write a rough draft of your 500-word essay explaining why you chose this person — don't worry about it being perfect yet.",
+          "done": true
+        },
+        {
+          "label": "Format your Word doc with your Name, Govt. section, Date, Candidate's name, and paste in your essay.",
+          "done": true
+        },
+        {
+          "label": "Use the webguide's citation resources to format your 3 sources in MLA or APA and add them to the bottom of the doc.",
+          "done": true
+        },
+        {
+          "label": "Do a final read-through and submit the Word doc before May 24.",
+          "done": true
+        }
+      ],
+      "archived": true,
+      "completedOn": "May 24"
+    },
+    {
+      "id": "presidential-campaig-1779223714383",
+      "title": "Presidential Campaign Final Presentation",
+      "due": "Jun 1",
+      "dueBeforeDay": false,
+      "chunks": [
+        {
+          "label": "Finish blocker assignments first (Candidate Essay + Candidate Platform) — these must be done before you can start the presentation",
+          "done": true
+        },
+        {
+          "label": "Open PowerPoint and create a title slide with your candidate's name, a photo, and the tagline '2028 Presidential Campaign'",
+          "done": true
+        },
+        {
+          "label": "Build slides 2–5: Who is your candidate? Include their background, major civil rights contributions, and 1–2 images of them or their cause",
+          "done": true
+        },
+        {
+          "label": "Build slides 6–9: Pick 3–4 current issues (e.g. immigration, gun control, healthcare) and add one slide per issue showing your candidate's stance in bullet points",
+          "done": true
+        },
+        {
+          "label": "Add a slide naming at least one interest group that would support your candidate and briefly explain why",
+          "done": true
+        },
+        {
+          "label": "Polish the deck — make slides colorful, remove walls of text, and add images to any slides that are bare",
+          "done": true
+        },
+        {
+          "label": "Add a Works Cited slide listing all sources and image credits (this slide does not count toward your 10-slide minimum)",
+          "done": true
+        }
+      ],
+      "archived": true,
+      "completedOn": "May 28"
+    },
+    {
+      "id": "presidential-candida-1779223775096",
+      "title": "Presidential Candidate's Platform",
+      "due": "Jun 1",
+      "dueBeforeDay": false,
+      "chunks": [
+        {
+          "label": "Open the worksheet file (PresidentialCandidatePlatform-2.docx) and read through all the prompts so you know exactly what's being asked — don't fill anything in yet, just get familiar with it. (5 min)",
+          "done": false
+        },
+        {
+          "label": "Pick your fictional presidential candidate: choose a name, a political party (real or made-up), and jot down 2–3 issues they care most about. This is your foundation. (10–15 min)",
+          "done": true
+        },
+        {
+          "label": "Fill in the platform positions section of the worksheet — write 1–3 sentences per issue explaining where your candidate stands and why. Aim for at least 3 issues total. (20–30 min)",
+          "done": false
+        },
+        {
+          "label": "Complete any remaining worksheet sections (biography, slogan, goals, etc.) — use bullet points first if full sentences feel slow. You can polish later. (20–30 min)",
+          "done": false
+        },
+        {
+          "label": "Review your completed worksheet and highlight or star the 3–5 strongest platform points that should be front-and-center in your Campaign Presentation. (10 min)",
+          "done": true
+        },
+        {
+          "label": "Start building your Presidential Campaign Presentation using the worksheet as your outline — make sure every worksheet item is represented somewhere in your slides or speech. (30–45 min)",
+          "done": true
+        },
+        {
+          "label": "Do a final check: confirm the completed worksheet is attached/included with your submission alongside the presentation, as the instructions require. (5 min)",
+          "done": true
+        }
+      ],
+      "archived": true,
+      "completedOn": "May 27"
+    },
+    {
+      "id": "units-1-and-2-readin-1779224063417",
+      "title": "Units 1 and 2 readings, quizzes and exams",
+      "due": "May 24",
+      "dueBeforeDay": false,
+      "chunks": [
+        {
+          "label": "Read Chapter 1",
+          "done": true
+        },
+        {
+          "label": "Take Chapter 1 Quiz",
+          "done": true
+        },
+        {
+          "label": "Read Chapter 2",
+          "done": true
+        },
+        {
+          "label": "Take Chapter 2 Quiz",
+          "done": true
+        },
+        {
+          "label": "Read Chapter 3",
+          "done": true
+        },
+        {
+          "label": "Take Chapter 3 Quiz",
+          "done": true
+        },
+        {
+          "label": "Take Unit 1 Exam",
+          "done": true
+        },
+        {
+          "label": "Read Chapter 11",
+          "done": true
+        },
+        {
+          "label": "Take Chapter 11 Quiz",
+          "done": true
+        },
+        {
+          "label": "Read Chapter 12",
+          "done": true
+        },
+        {
+          "label": "Take Chapter 12 Quiz",
+          "done": true
+        },
+        {
+          "label": "Read Chapter 14",
+          "done": true
+        },
+        {
+          "label": "Take Chapter 14 Quiz",
+          "done": true
+        },
+        {
+          "label": "Take Unit 2 Exam",
+          "done": true
+        }
+      ],
+      "archived": true,
+      "completedOn": "May 24"
+    },
+    {
+      "id": "unit-3-readings-and--1779224168380",
+      "title": "Unit 3 Readings and Quizzes",
+      "due": "Jun 1",
+      "dueBeforeDay": false,
+      "chunks": [
+        {
+          "label": "Read Chapter 4 and complete its quiz",
+          "done": true
+        },
+        {
+          "label": "Read Chapter 5 and complete its quiz",
+          "done": true
+        },
+        {
+          "label": "Read Chapter 6 and complete its quiz",
+          "done": true
+        },
+        {
+          "label": "Read Chapter 7 and complete its quiz",
+          "done": true
+        },
+        {
+          "label": "Read Chapter 8 and complete its quiz",
+          "done": true
+        },
+        {
+          "label": "Read Chapter 9 and complete its quiz",
+          "done": true
+        },
+        {
+          "label": "Read Chapter 10 and complete its quiz",
+          "done": true
+        }
+      ],
+      "archived": true,
+      "completedOn": "May 30"
+    },
+    {
+      "id": "final-cumulative-exa-1779224276110",
+      "title": "Final Cumulative Exam",
+      "due": "Jun 2",
+      "dueBeforeDay": false,
+      "chunks": [
+        {
+          "label": "Gather everything: collect all notes, slides, past quizzes, and any study guides into one folder (physical or digital). Just collecting, nothing else.",
+          "done": true
+        },
+        {
+          "label": "Skim all materials for 20 min: flip through everything without reading deeply — just flag topics that feel unfamiliar or scary with a sticky note or highlight.",
+          "done": true
+        },
+        {
+          "label": "Review past quizzes: go through each quiz you've taken, note which questions you got wrong, and write a one-sentence explanation of the right answer.",
+          "done": true
+        },
+        {
+          "label": "Deep review — Part 1: pick the first half of the course topics and spend one focused session re-reading notes or slides on those only.",
+          "done": true
+        },
+        {
+          "label": "Deep review — Part 2: repeat the same focused session for the second half of the course topics.",
+          "done": true
+        },
+        {
+          "label": "Practice quiz with Claude: ask Claude to quiz you on the topics you flagged as fuzzy. Do it out loud or typed, low stakes, just to see what sticks.",
+          "done": true
+        },
+        {
+          "label": "Full practice exam with Claude: ask Claude to simulate a full cumulative exam under mild time pressure. Review every answer afterward.",
+          "done": true
+        },
+        {
+          "label": "Final weak-spot pass: based on the practice exam, spend one last session only on the 2–3 topics where you lost the most points.",
+          "done": true
+        }
+      ],
+      "archived": true,
+      "completedOn": "Jun 3"
     }
   ],
   "debriefs": [
+    {
+      "date": "Mon, Jun 1",
+      "did": "I took my final exam today and secured an A in the class. I did an insta cart run and spent entirely too much time building out our companion website for me and my dad's fantasy team. I also helped my parents set up their old laptop for my grandmother to use.",
+      "fire": "",
+      "enough": "I finished my Maymester class with an A grade. I am killing it at school and now I get to just focus on insta cart and enjoying some free time before my summer class starts",
+      "fireState": "no"
+    },
+    {
+      "date": "Fri, May 29",
+      "did": "I turned in my 2 remaining assignments for my class, did another reading, did an insta cart run, and picked up my prescription and topped off on gas. It was a light day, but I earned a bit of a break after working so hard the last couple weeks",
+      "fire": "",
+      "enough": "I earned a light day, and nothing important got put off. I enjoyed my free time with my friends and that is important for not burning myself out",
+      "fireState": "no"
+    },
+    {
+      "date": "Thu, May 28",
+      "did": "I completed my final government project, did another chapter quiz, and did some insta cart. I have done a fantastic job managing this class",
+      "fire": "",
+      "enough": "I am way ahead of schedule for my Maymester class and am on track to get another A.",
+      "fireState": "no"
+    },
+    {
+      "date": "Mon, May 4",
+      "did": "I finished one of my government projects, I read my philosophy assignment, and I got a TON of stuff done for my DND campaign",
+      "fire": "",
+      "enough": "Im getting things done on time. Im not perfect, but nothing is on fire, and I handle things when their due dates approach.",
+      "fireState": "no"
+    },
+    {
+      "date": "Sun, Apr 26",
+      "did": "Spent several hours doing a deep dive on power systems concepts — reactive power, impedance, transmission line wave behavior, characteristic impedance, and reflection. Reignited something that had been missing for weeks. Also identified that my Concerta may be causing a lot of my persistent negative feelings and wrote to my psychiatrist about it.",
+      "fire": "But the side effects of my medication are worth monitoring until I hear back from my psychiatrist. Tomorrow i will get back on track with my history readings",
+      "enough": "I reignited my passion for the field I'm building toward, identified something important about how my medication might be affecting me, and took action on it. The empty feeling was real, but it didn't stop me from doing something genuinely meaningful today.",
+      "fireState": "no"
+    },
+    {
+      "date": "Tue, Apr 14",
+      "did": "not much, im really tired of feeling so bad. Its killing my motivation",
+      "fire": "I didnt really do my philosophy reading. I'll cram for it tomorrow and do ok, but today was a bad day",
+      "enough": "It wasn't today was a bad day",
+      "fireState": "yes"
+    },
+    {
+      "date": "Sat, Apr 11",
+      "did": "I did a lot today. I started my tax return process, I worked on my dashboard, I did my laundry, washed my sheets, cleaned up the house, vacuumed the rug and stairs, and worked through a tough day mentally. I also studied for my Hume/Kant exam",
+      "fire": "",
+      "enough": "Today was tough, and I still got a lot done. Nothing is on fire, just keep working through and journaling and everything will work itself out",
+      "fireState": "no"
+    },
+    {
+      "date": "Sat, Apr 11",
+      "did": "Finished and ran session2",
+      "fire": "",
+      "enough": "I did a ton of work today. I still have time to do everything I need to do. I will adjust and move forward, but I did well today, I worked really hard",
+      "fireState": "no"
+    },
+    {
+      "date": "Thu, Apr 9",
+      "did": "I completed every encounter and npc needed for the campaign tomorrow. The rest can easily be completed tomorrow",
+      "fire": "",
+      "enough": "I got what i needed to done. Everything else can be managed",
+      "fireState": "no"
+    },
+    {
+      "date": "Mon, Apr 6",
+      "did": "I finished my index card for tomorrows exam, I did 2 additional study sessions, I further improved my dashboard, I made my bed, I sent my phsych my BP readings, and I contacted my doctor about my BP meds.",
+      "fire": "",
+      "enough": "Today was a tough day emotionally because of my withdrawal from Bupropion, and i still managed to finish studying and handle a few life tasks that were important. Nothing import got pushed",
+      "fireState": "no"
+    },
     {
       "date": "Fri, Apr 3",
       "did": "I did my laundry, did an insta cart run, did some reading towards my history exam, and scheduled my classes so they are ready for registration. I also read chapter 12 of my text book, so all i have left for history is to finish reading the final chapter and study. I have done well the last couple days",
@@ -325,250 +871,1243 @@
   ],
   "today": [
     {
-      "id": 1775098944594,
-      "label": "Schedule advisor appointment",
+      "id": 1776179171761,
+      "label": "Fill out post-meeting section",
       "done": true,
       "type": "chunk",
-      "projectId": "register",
-      "projectTitle": "Register for classes",
-      "chunkIdx": 3,
-      "date": "2026-04-03"
+      "projectId": "gov",
+      "projectTitle": "Public meeting: government",
+      "chunkIdx": 6,
+      "date": "2026-04-22"
     },
     {
-      "id": 1775152609056,
-      "label": "Attend advisor meeting and get any required sign-offs",
+      "id": 1776179186995,
+      "label": "Explore context around the policy",
       "done": true,
       "type": "chunk",
-      "projectId": "register",
-      "projectTitle": "Register for classes",
-      "chunkIdx": 4,
-      "date": "2026-04-02"
+      "projectId": "policy",
+      "projectTitle": "Policy case study",
+      "chunkIdx": 1,
+      "date": "2026-04-26"
     },
     {
-      "id": 1775152786043,
-      "label": "Chapter 8",
+      "id": 1776701417289,
+      "label": "Read Ch. 12 (all), pp. 299–319 – Progressive Era / Jim Ferguson",
       "done": true,
       "type": "chunk",
-      "projectId": "history",
-      "projectTitle": "History exam",
-      "chunkIdx": 2,
-      "date": "2026-04-02"
+      "projectId": "history-textbook-rea-1776007492624",
+      "projectTitle": "History Textbook Readings",
+      "chunkIdx": 0,
+      "date": "2026-04-29"
     },
     {
-      "id": 1775153364772,
-      "label": "Instacart Run",
+      "id": 1776701464840,
+      "label": "put away laundry",
       "done": true,
       "type": "standalone",
-      "date": "2026-04-02"
+      "date": "2026-04-21"
     },
     {
-      "id": 1775188365475,
-      "label": "Chapter 12",
-      "done": true,
-      "type": "chunk",
-      "projectId": "history",
-      "projectTitle": "History exam",
-      "chunkIdx": 4,
-      "date": "2026-04-03"
-    },
-    {
-      "id": 1775188378074,
-      "label": "Road map to new area",
-      "done": false,
-      "type": "chunk",
-      "projectId": "dnd",
-      "projectTitle": "DND session 2",
-      "chunkIdx": 4,
-      "date": "2026-04-04"
-    },
-    {
-      "id": 1775236344216,
-      "label": "Start laundry",
+      "id": 1776701473709,
+      "label": "get hair cut",
       "done": true,
       "type": "standalone",
-      "date": "2026-04-03"
+      "date": "2026-05-02"
     },
     {
-      "id": 1775236357401,
-      "label": "Move laundry to dryer",
+      "id": 1776701509376,
+      "label": "empty litter box",
       "done": true,
       "type": "standalone",
-      "date": "2026-04-03"
+      "date": "2026-04-21"
     },
     {
-      "id": 1775254977795,
-      "label": "Instacart runs (2/3)",
+      "id": 1776612686615,
+      "label": "study for Nietzsche quiz",
+      "done": true,
+      "type": "standalone",
+      "date": "2026-04-21"
+    },
+    {
+      "id": 1776612690855,
+      "label": "make bed",
+      "done": true,
+      "type": "standalone",
+      "date": "2026-04-21"
+    },
+    {
+      "id": 1776612702629,
+      "label": "insta cart run",
+      "done": true,
+      "type": "standalone",
+      "date": "2026-04-21"
+    },
+    {
+      "id": 1776619273454,
+      "label": "Instacart runs (1/3)",
       "done": true,
       "type": "recurring",
       "recId": "instacart",
       "sourceLabel": "Instacart runs",
-      "date": "2026-04-03"
+      "date": "2026-04-21"
     },
     {
-      "id": 1775254982396,
+      "id": 1776619280069,
+      "label": "Wash Sheets",
+      "done": true,
+      "type": "recurring",
+      "recId": "rec-1775188819984",
+      "sourceLabel": "Wash Sheets",
+      "date": "2026-04-21"
+    },
+    {
+      "id": 1776619284626,
       "label": "Laundry",
       "done": true,
       "type": "recurring",
       "recId": "rec-1775188833910",
       "sourceLabel": "Laundry",
-      "date": "2026-04-03"
+      "date": "2026-04-21"
     },
     {
-      "id": 1775255157151,
-      "label": "Create Study Chat in history project in Claude as a study aid",
+      "id": 1776701455888,
+      "label": "wash blanket",
       "done": true,
-      "type": "chunk",
-      "projectId": "history",
-      "projectTitle": "History exam",
-      "chunkIdx": 5,
-      "date": "2026-04-04"
+      "type": "standalone",
+      "date": "2026-04-21"
     },
     {
-      "id": 1775255160443,
-      "label": "Study Session 1",
+      "id": 1776612662038,
+      "label": "complete Texas History quiz",
       "done": true,
-      "type": "chunk",
-      "projectId": "history",
-      "projectTitle": "History exam",
-      "chunkIdx": 6,
-      "date": "2026-04-04"
+      "type": "standalone",
+      "date": "2026-04-21"
     },
     {
-      "id": 1775255162999,
-      "label": "Study Session 2",
-      "done": false,
-      "type": "chunk",
-      "projectId": "history",
-      "projectTitle": "History exam",
-      "chunkIdx": 7,
-      "date": "2026-04-04"
-    },
-    {
-      "id": 1775255241517,
-      "label": "Goblin camp map + goblin NPCs",
-      "done": false,
-      "type": "chunk",
-      "projectId": "dnd",
-      "projectTitle": "DND session 2",
-      "chunkIdx": 5,
-      "date": "2026-04-04"
-    },
-    {
-      "id": 1775255633818,
-      "label": "Chapter 9",
+      "id": 1776612680310,
+      "label": "read Nietzsche assignment",
       "done": true,
-      "type": "chunk",
-      "projectId": "history",
-      "projectTitle": "History exam",
-      "chunkIdx": 3,
-      "date": "2026-04-04"
+      "type": "standalone",
+      "date": "2026-04-21"
     },
     {
-      "id": 1775268419834,
-      "label": "Create Schedule",
+      "id": 1776702535051,
+      "label": "study for philosophy quiz",
       "done": true,
-      "type": "chunk",
-      "projectId": "register",
-      "projectTitle": "Register for classes",
-      "chunkIdx": 6,
-      "date": "2026-04-03"
+      "type": "standalone",
+      "date": "2026-04-21"
     },
     {
-      "id": 1775268449968,
-      "label": "Fill out pre-meeting section",
-      "done": false,
+      "id": 1776703831898,
+      "label": "Daily Affirmation",
+      "done": true,
+      "type": "recurring",
+      "recId": "rec-1776703817211",
+      "sourceLabel": "Daily Affirmation",
+      "date": "2026-04-21"
+    },
+    {
+      "id": 1776701479369,
+      "label": "Instacart runs (1/3)",
+      "done": true,
+      "type": "recurring",
+      "recId": "instacart",
+      "sourceLabel": "Instacart runs",
+      "date": "2026-04-20"
+    },
+    {
+      "id": 1776874015524,
+      "label": "Daily Affirmation",
+      "done": true,
+      "type": "recurring",
+      "recId": "rec-1776703817211",
+      "sourceLabel": "Daily Affirmation",
+      "date": "2026-04-22"
+    },
+    {
+      "id": 1776874055959,
+      "label": "Instacart runs",
+      "done": true,
+      "type": "recurring",
+      "recId": "instacart",
+      "sourceLabel": "Instacart runs",
+      "isValueType": true,
+      "date": "2026-04-22"
+    },
+    {
+      "id": 1776874125542,
+      "label": "Instacart runs",
+      "done": true,
+      "type": "recurring",
+      "recId": "instacart",
+      "sourceLabel": "Instacart runs",
+      "isValueType": true,
+      "date": "2026-04-23"
+    },
+    {
+      "id": 1776958595399,
+      "label": "Instacart runs",
+      "done": true,
+      "type": "recurring",
+      "recId": "instacart",
+      "sourceLabel": "Instacart runs",
+      "isValueType": true,
+      "date": "2026-04-29"
+    },
+    {
+      "id": 1776958739016,
+      "label": "Daily Affirmation",
+      "done": true,
+      "type": "recurring",
+      "recId": "rec-1776703817211",
+      "sourceLabel": "Daily Affirmation",
+      "date": "2026-04-23"
+    },
+    {
+      "id": 1777262616016,
+      "label": "Finish reading and study for Arendt quiz",
+      "done": true,
+      "type": "standalone",
+      "date": "2026-04-29"
+    },
+    {
+      "id": 1777478555628,
+      "label": "finish redistricting game",
+      "done": true,
+      "type": "standalone",
+      "date": "2026-04-29"
+    },
+    {
+      "id": 1777566074139,
+      "label": "Edit and finalize",
+      "done": true,
       "type": "chunk",
       "projectId": "gov",
       "projectTitle": "Public meeting: government",
-      "chunkIdx": 2,
-      "date": "2026-04-04"
-    },
-    {
-      "id": 1775420439461,
-      "label": "Study Session 2",
-      "done": true,
-      "type": "chunk",
-      "projectId": "history",
-      "projectTitle": "History exam",
       "chunkIdx": 7,
-      "date": "2026-04-05"
+      "date": "2026-05-03"
     },
     {
-      "id": 1775420442869,
-      "label": "Study Session 3",
-      "done": false,
-      "type": "chunk",
-      "projectId": "history",
-      "projectTitle": "History exam",
-      "chunkIdx": 8,
-      "date": "2026-04-05"
+      "id": 1777660553933,
+      "label": "complete phisolophy assignment",
+      "done": true,
+      "type": "standalone",
+      "date": "2026-05-02"
     },
     {
-      "id": 1775420456569,
-      "label": "Create a new project folder in Claude and upload all relevant documents (notes, readings, syllabus, past exams)",
+      "id": 1777660558675,
+      "label": "make bed",
+      "done": true,
+      "type": "standalone",
+      "date": "2026-05-02"
+    },
+    {
+      "id": 1777660562645,
+      "label": "clean room",
+      "done": true,
+      "type": "standalone",
+      "date": "2026-05-02"
+    },
+    {
+      "id": 1777660568062,
+      "label": "empty litter box",
+      "done": true,
+      "type": "standalone",
+      "date": "2026-05-01"
+    },
+    {
+      "id": 1777660595603,
+      "label": "pick up groceries from walmart",
+      "done": true,
+      "type": "standalone",
+      "date": "2026-05-02"
+    },
+    {
+      "id": 1777758708338,
+      "label": "Vacuum Upstairs Rug",
+      "done": true,
+      "type": "recurring",
+      "recId": "rec-1775934698800",
+      "sourceLabel": "Vacuum Upstairs Rug",
+      "date": "2026-05-02"
+    },
+    {
+      "id": 1777758746502,
+      "label": "Instacart runs",
+      "done": true,
+      "type": "recurring",
+      "recId": "instacart",
+      "sourceLabel": "Instacart runs",
+      "date": "2026-05-02"
+    },
+    {
+      "id": 1777758762030,
+      "label": "Vacuum Stairs",
+      "done": true,
+      "type": "recurring",
+      "recId": "rec-1775934708715",
+      "sourceLabel": "Vacuum Stairs",
+      "date": "2026-05-02"
+    },
+    {
+      "id": 1777768911936,
+      "label": "mow yard",
+      "done": true,
+      "type": "standalone",
+      "date": "2026-05-02"
+    },
+    {
+      "id": 1777836676230,
+      "label": "Skim the Arendt text: read only the first and last paragraph of each section to get the big picture (20-30 min)",
       "done": true,
       "type": "chunk",
-      "projectId": "hume-and-kant-exam-1775323341589",
-      "projectTitle": "Hume and Kant Exam",
+      "projectId": "arendt-reading-quiz--1777826861035",
+      "projectTitle": "arendt reading quiz 2",
       "chunkIdx": 0,
-      "date": "2026-04-05"
+      "date": "2026-05-03"
     },
     {
-      "id": 1775422831226,
-      "label": "Study Session 4",
-      "done": false,
-      "type": "chunk",
-      "projectId": "history",
-      "projectTitle": "History exam",
-      "chunkIdx": 9,
-      "date": "2026-04-06"
-    },
-    {
-      "id": 1775422833451,
-      "label": "Create index card for exam",
+      "id": 1777836678241,
+      "label": "Read the Arendt text fully in one sitting — use a timer, 25 min on / 5 min off (Pomodoro)",
       "done": true,
       "type": "chunk",
-      "projectId": "history",
-      "projectTitle": "History exam",
-      "chunkIdx": 10,
-      "date": "2026-04-06"
+      "projectId": "arendt-reading-quiz--1777826861035",
+      "projectTitle": "arendt reading quiz 2",
+      "chunkIdx": 1,
+      "date": "2026-05-03"
     },
     {
-      "id": 1775488064725,
-      "label": "Study Session 3",
+      "id": 1777836680829,
+      "label": "Read the professor's companion chapter — highlight 3-5 key ideas that connect to the Arendt text",
       "done": true,
       "type": "chunk",
-      "projectId": "history",
-      "projectTitle": "History exam",
+      "projectId": "arendt-reading-quiz--1777826861035",
+      "projectTitle": "arendt reading quiz 2",
+      "chunkIdx": 2,
+      "date": "2026-05-04"
+    },
+    {
+      "id": 1777836700713,
+      "label": "Instacart runs",
+      "done": true,
+      "type": "recurring",
+      "recId": "instacart",
+      "sourceLabel": "Instacart runs",
+      "isValueType": true,
+      "date": "2026-05-05"
+    },
+    {
+      "id": 1777907584152,
+      "label": "Explore divisions of political power",
+      "done": true,
+      "type": "chunk",
+      "projectId": "policy",
+      "projectTitle": "Policy case study",
+      "chunkIdx": 2,
+      "date": "2026-05-05"
+    },
+    {
+      "id": 1777907610876,
+      "label": "Pick your 8 documents: Skim through Chapters 13–17 of Texas Voices and circle or list 8 primary source documents that each have 3 Thought Questions after them (skip any that only have 1 question after a picture).",
+      "done": true,
+      "type": "chunk",
+      "projectId": "texas-history-hw-3-1775938429614",
+      "projectTitle": "Texas History HW 3",
+      "chunkIdx": 0,
+      "date": "2026-05-04"
+    },
+    {
+      "id": 1777907612088,
+      "label": "Read Document 1 and answer all 3 of its Thought Questions in a few sentences each.",
+      "done": true,
+      "type": "chunk",
+      "projectId": "texas-history-hw-3-1775938429614",
+      "projectTitle": "Texas History HW 3",
+      "chunkIdx": 1,
+      "date": "2026-05-04"
+    },
+    {
+      "id": 1777917450470,
+      "label": "Ask Claude to run a practice quiz on the Arendt text (10-15 questions)",
+      "done": true,
+      "type": "chunk",
+      "projectId": "arendt-reading-quiz--1777826861035",
+      "projectTitle": "arendt reading quiz 2",
+      "chunkIdx": 4,
+      "date": "2026-05-04"
+    },
+    {
+      "id": 1777917451461,
+      "label": "Review any questions you missed and re-read those sections",
+      "done": true,
+      "type": "chunk",
+      "projectId": "arendt-reading-quiz--1777826861035",
+      "projectTitle": "arendt reading quiz 2",
+      "chunkIdx": 5,
+      "date": "2026-05-04"
+    },
+    {
+      "id": 1777917451873,
+      "label": "Do one final practice quiz with Claude to confirm you're ready",
+      "done": true,
+      "type": "chunk",
+      "projectId": "arendt-reading-quiz--1777826861035",
+      "projectTitle": "arendt reading quiz 2",
+      "chunkIdx": 6,
+      "date": "2026-05-04"
+    },
+    {
+      "id": 1777917478755,
+      "label": "Make my bed",
+      "done": true,
+      "type": "recurring",
+      "recId": "rec-1777917474295",
+      "sourceLabel": "Make my bed",
+      "date": "2026-05-04"
+    },
+    {
+      "id": 1778003494173,
+      "label": "Make my bed",
+      "done": true,
+      "type": "recurring",
+      "recId": "rec-1777917474295",
+      "sourceLabel": "Make my bed",
+      "date": "2026-05-05"
+    },
+    {
+      "id": 1778080336706,
+      "label": "Vacuum Upstairs Rug",
+      "done": true,
+      "type": "recurring",
+      "recId": "rec-1775934698800",
+      "sourceLabel": "Vacuum Upstairs Rug",
+      "date": "2026-05-06"
+    },
+    {
+      "id": 1778080340050,
+      "label": "Make my bed",
+      "done": true,
+      "type": "recurring",
+      "recId": "rec-1777917474295",
+      "sourceLabel": "Make my bed",
+      "date": "2026-05-06"
+    },
+    {
+      "id": 1778080348862,
+      "label": "Identify government actors (name names)",
+      "done": true,
+      "type": "chunk",
+      "projectId": "policy",
+      "projectTitle": "Policy case study",
+      "chunkIdx": 3,
+      "date": "2026-05-06"
+    },
+    {
+      "id": 1778080353306,
+      "label": "Identify interest groups and opposition",
+      "done": true,
+      "type": "chunk",
+      "projectId": "policy",
+      "projectTitle": "Policy case study",
+      "chunkIdx": 4,
+      "date": "2026-05-06"
+    },
+    {
+      "id": 1778080355771,
+      "label": "Evaluate policy and predict future",
+      "done": true,
+      "type": "chunk",
+      "projectId": "policy",
+      "projectTitle": "Policy case study",
+      "chunkIdx": 5,
+      "date": "2026-05-07"
+    },
+    {
+      "id": 1778080374738,
+      "label": "Instacart runs",
+      "done": true,
+      "type": "recurring",
+      "recId": "instacart",
+      "sourceLabel": "Instacart runs",
+      "isValueType": true,
+      "date": "2026-05-08"
+    },
+    {
+      "id": 1778167679185,
+      "label": "Make my bed",
+      "done": true,
+      "type": "recurring",
+      "recId": "rec-1777917474295",
+      "sourceLabel": "Make my bed",
+      "date": "2026-05-07"
+    },
+    {
+      "id": 1778183633334,
+      "label": "Compile, format, and submit",
+      "done": true,
+      "type": "chunk",
+      "projectId": "policy",
+      "projectTitle": "Policy case study",
+      "chunkIdx": 6,
+      "date": "2026-05-07"
+    },
+    {
+      "id": 1778264421831,
+      "label": "Make my bed",
+      "done": true,
+      "type": "recurring",
+      "recId": "rec-1777917474295",
+      "sourceLabel": "Make my bed",
+      "date": "2026-05-08"
+    },
+    {
+      "id": 1778368726065,
+      "label": "Laundry",
+      "done": true,
+      "type": "recurring",
+      "recId": "rec-1775188833910",
+      "sourceLabel": "Laundry",
+      "date": "2026-05-10"
+    },
+    {
+      "id": 1778368731883,
+      "label": "Vacuum Upstairs Rug",
+      "done": true,
+      "type": "recurring",
+      "recId": "rec-1775934698800",
+      "sourceLabel": "Vacuum Upstairs Rug",
+      "date": "2026-05-10"
+    },
+    {
+      "id": 1778368733389,
+      "label": "Vacuum Stairs",
+      "done": true,
+      "type": "recurring",
+      "recId": "rec-1775934708715",
+      "sourceLabel": "Vacuum Stairs",
+      "date": "2026-05-12"
+    },
+    {
+      "id": 1778368737197,
+      "label": "Make my bed",
+      "done": true,
+      "type": "recurring",
+      "recId": "rec-1777917474295",
+      "sourceLabel": "Make my bed",
+      "date": "2026-05-12"
+    },
+    {
+      "id": 1778368743775,
+      "label": "Wash Sheets",
+      "done": true,
+      "type": "recurring",
+      "recId": "rec-1775188819984",
+      "sourceLabel": "Wash Sheets",
+      "date": "2026-05-12"
+    },
+    {
+      "id": 1778608606853,
+      "label": "Read Documents 2 & 3 and answer all 3 Thought Questions for each.",
+      "done": true,
+      "type": "chunk",
+      "projectId": "texas-history-hw-3-1775938429614",
+      "projectTitle": "Texas History HW 3",
+      "chunkIdx": 2,
+      "date": "2026-05-14"
+    },
+    {
+      "id": 1778608614166,
+      "label": "Instacart runs",
+      "done": true,
+      "type": "recurring",
+      "recId": "instacart",
+      "sourceLabel": "Instacart runs",
+      "isValueType": true,
+      "date": "2026-05-12"
+    },
+    {
+      "id": 1778688474842,
+      "label": "Make my bed",
+      "done": true,
+      "type": "recurring",
+      "recId": "rec-1777917474295",
+      "sourceLabel": "Make my bed",
+      "date": "2026-05-14"
+    },
+    {
+      "id": 1778688488358,
+      "label": "Read Documents 4 & 5 and answer all 3 Thought Questions for each.",
+      "done": true,
+      "type": "chunk",
+      "projectId": "texas-history-hw-3-1775938429614",
+      "projectTitle": "Texas History HW 3",
+      "chunkIdx": 3,
+      "date": "2026-05-14"
+    },
+    {
+      "id": 1778781958282,
+      "label": "Instacart runs",
+      "done": true,
+      "type": "recurring",
+      "recId": "instacart",
+      "sourceLabel": "Instacart runs",
+      "isValueType": true,
+      "date": "2026-05-14"
+    },
+    {
+      "id": 1778781959688,
+      "label": "Instacart runs",
+      "done": true,
+      "type": "recurring",
+      "recId": "instacart",
+      "sourceLabel": "Instacart runs",
+      "isValueType": true,
+      "date": "2026-05-14"
+    },
+    {
+      "id": 1779042976159,
+      "label": "Make my bed",
+      "done": true,
+      "type": "recurring",
+      "recId": "rec-1777917474295",
+      "sourceLabel": "Make my bed",
+      "date": "2026-05-17"
+    },
+    {
+      "id": 1779042983320,
+      "label": "Instacart runs",
+      "done": true,
+      "type": "recurring",
+      "recId": "instacart",
+      "sourceLabel": "Instacart runs",
+      "isValueType": true,
+      "date": "2026-05-17"
+    },
+    {
+      "id": 1779042993330,
+      "label": "Wash Sheets",
+      "done": true,
+      "type": "recurring",
+      "recId": "rec-1775188819984",
+      "sourceLabel": "Wash Sheets",
+      "date": "2026-05-17"
+    },
+    {
+      "id": 1779223539015,
+      "label": "Make my bed",
+      "done": true,
+      "type": "recurring",
+      "recId": "rec-1777917474295",
+      "sourceLabel": "Make my bed",
+      "date": "2026-05-19"
+    },
+    {
+      "id": 1779223540630,
+      "label": "Vacuum Upstairs Rug",
+      "done": true,
+      "type": "recurring",
+      "recId": "rec-1775934698800",
+      "sourceLabel": "Vacuum Upstairs Rug",
+      "date": "2026-05-19"
+    },
+    {
+      "id": 1779223554886,
+      "label": "Instacart runs",
+      "done": true,
+      "type": "recurring",
+      "recId": "instacart",
+      "sourceLabel": "Instacart runs",
+      "isValueType": true,
+      "date": "2026-05-19"
+    },
+    {
+      "id": 1779223606074,
+      "label": "Re-read the assignment instructions in the MODULE titled 'Writing Assignments & Presentations' and pick 1 person you admire — they don't have to be a politician or even alive.",
+      "done": true,
+      "type": "chunk",
+      "projectId": "presidential-candida-1779223534030",
+      "projectTitle": "Presidential Candidate Essay",
+      "chunkIdx": 0,
+      "date": "2026-05-19"
+    },
+    {
+      "id": 1779223613256,
+      "label": "Open the library database webguide (also in that MODULE) and find 3 academic sources about your chosen candidate.",
+      "done": true,
+      "type": "chunk",
+      "projectId": "presidential-candida-1779223534030",
+      "projectTitle": "Presidential Candidate Essay",
+      "chunkIdx": 1,
+      "date": "2026-05-23"
+    },
+    {
+      "id": 1779223614122,
+      "label": "Copy the 3 source links/titles somewhere safe (Notes app, doc, anywhere) so you don't lose them.",
+      "done": true,
+      "type": "chunk",
+      "projectId": "presidential-candida-1779223534030",
+      "projectTitle": "Presidential Candidate Essay",
+      "chunkIdx": 2,
+      "date": "2026-05-23"
+    },
+    {
+      "id": 1779224379286,
+      "label": "Read Chapter 3",
+      "done": true,
+      "type": "chunk",
+      "projectId": "units-1-and-2-readin-1779224063417",
+      "projectTitle": "Units 1 and 2 readings, quizzes and exams",
+      "chunkIdx": 4,
+      "date": "2026-05-20"
+    },
+    {
+      "id": 1779224380515,
+      "label": "Take Chapter 3 Quiz",
+      "done": true,
+      "type": "chunk",
+      "projectId": "units-1-and-2-readin-1779224063417",
+      "projectTitle": "Units 1 and 2 readings, quizzes and exams",
+      "chunkIdx": 5,
+      "date": "2026-05-20"
+    },
+    {
+      "id": 1779324984728,
+      "label": "Make my bed",
+      "done": true,
+      "type": "recurring",
+      "recId": "rec-1777917474295",
+      "sourceLabel": "Make my bed",
+      "date": "2026-05-20"
+    },
+    {
+      "id": 1779370867469,
+      "label": "Read Chapter 4 and complete its quiz",
+      "done": true,
+      "type": "chunk",
+      "projectId": "unit-3-readings-and--1779224168380",
+      "projectTitle": "Unit 3 Readings and Quizzes",
+      "chunkIdx": 0,
+      "date": "2026-05-21"
+    },
+    {
+      "id": 1779370871088,
+      "label": "Take Unit 1 Exam",
+      "done": true,
+      "type": "chunk",
+      "projectId": "units-1-and-2-readin-1779224063417",
+      "projectTitle": "Units 1 and 2 readings, quizzes and exams",
+      "chunkIdx": 6,
+      "date": "2026-05-21"
+    },
+    {
+      "id": 1779546882705,
+      "label": "Laundry",
+      "done": true,
+      "type": "recurring",
+      "recId": "rec-1775188833910",
+      "sourceLabel": "Laundry",
+      "date": "2026-05-23"
+    },
+    {
+      "id": 1779546887714,
+      "label": "Vacuum Stairs",
+      "done": true,
+      "type": "recurring",
+      "recId": "rec-1775934708715",
+      "sourceLabel": "Vacuum Stairs",
+      "date": "2026-05-30"
+    },
+    {
+      "id": 1779546891047,
+      "label": "Make my bed",
+      "done": true,
+      "type": "recurring",
+      "recId": "rec-1777917474295",
+      "sourceLabel": "Make my bed",
+      "date": "2026-05-23"
+    },
+    {
+      "id": 1779546944545,
+      "label": "Read Chapter 11",
+      "done": true,
+      "type": "chunk",
+      "projectId": "units-1-and-2-readin-1779224063417",
+      "projectTitle": "Units 1 and 2 readings, quizzes and exams",
+      "chunkIdx": 7,
+      "date": "2026-05-23"
+    },
+    {
+      "id": 1779546945997,
+      "label": "Take Chapter 11 Quiz",
+      "done": true,
+      "type": "chunk",
+      "projectId": "units-1-and-2-readin-1779224063417",
+      "projectTitle": "Units 1 and 2 readings, quizzes and exams",
       "chunkIdx": 8,
-      "date": "2026-04-06"
+      "date": "2026-05-23"
     },
     {
-      "id": 1775488808914,
-      "label": "Get BP measurement for Dr Martin",
+      "id": 1779546947307,
+      "label": "Read Chapter 12",
       "done": true,
-      "type": "standalone",
-      "date": "2026-04-06"
+      "type": "chunk",
+      "projectId": "units-1-and-2-readin-1779224063417",
+      "projectTitle": "Units 1 and 2 readings, quizzes and exams",
+      "chunkIdx": 9,
+      "date": "2026-05-23"
     },
     {
-      "id": 1775492419914,
-      "label": "Make bed",
+      "id": 1779546948771,
+      "label": "Take Chapter 12 Quiz",
+      "done": true,
+      "type": "chunk",
+      "projectId": "units-1-and-2-readin-1779224063417",
+      "projectTitle": "Units 1 and 2 readings, quizzes and exams",
+      "chunkIdx": 10,
+      "date": "2026-05-23"
+    },
+    {
+      "id": 1779546950264,
+      "label": "Read Chapter 14",
+      "done": true,
+      "type": "chunk",
+      "projectId": "units-1-and-2-readin-1779224063417",
+      "projectTitle": "Units 1 and 2 readings, quizzes and exams",
+      "chunkIdx": 11,
+      "date": "2026-05-24"
+    },
+    {
+      "id": 1779546951264,
+      "label": "Take Chapter 14 Quiz",
+      "done": true,
+      "type": "chunk",
+      "projectId": "units-1-and-2-readin-1779224063417",
+      "projectTitle": "Units 1 and 2 readings, quizzes and exams",
+      "chunkIdx": 12,
+      "date": "2026-05-24"
+    },
+    {
+      "id": 1779640834578,
+      "label": "Write a rough draft of your 500-word essay explaining why you chose this person — don't worry about it being perfect yet.",
+      "done": true,
+      "type": "chunk",
+      "projectId": "presidential-candida-1779223534030",
+      "projectTitle": "Presidential Candidate Essay",
+      "chunkIdx": 3,
+      "date": "2026-05-24"
+    },
+    {
+      "id": 1779640835962,
+      "label": "Format your Word doc with your Name, Govt. section, Date, Candidate's name, and paste in your essay.",
+      "done": true,
+      "type": "chunk",
+      "projectId": "presidential-candida-1779223534030",
+      "projectTitle": "Presidential Candidate Essay",
+      "chunkIdx": 4,
+      "date": "2026-05-24"
+    },
+    {
+      "id": 1779640837295,
+      "label": "Use the webguide's citation resources to format your 3 sources in MLA or APA and add them to the bottom of the doc.",
+      "done": true,
+      "type": "chunk",
+      "projectId": "presidential-candida-1779223534030",
+      "projectTitle": "Presidential Candidate Essay",
+      "chunkIdx": 5,
+      "date": "2026-05-24"
+    },
+    {
+      "id": 1779640838795,
+      "label": "Do a final read-through and submit the Word doc before May 24.",
+      "done": true,
+      "type": "chunk",
+      "projectId": "presidential-candida-1779223534030",
+      "projectTitle": "Presidential Candidate Essay",
+      "chunkIdx": 6,
+      "date": "2026-05-24"
+    },
+    {
+      "id": 1779640845428,
+      "label": "Take Unit 2 Exam",
+      "done": true,
+      "type": "chunk",
+      "projectId": "units-1-and-2-readin-1779224063417",
+      "projectTitle": "Units 1 and 2 readings, quizzes and exams",
+      "chunkIdx": 13,
+      "date": "2026-05-24"
+    },
+    {
+      "id": 1779663723839,
+      "label": "Make my bed",
+      "done": true,
+      "type": "recurring",
+      "recId": "rec-1777917474295",
+      "sourceLabel": "Make my bed",
+      "date": "2026-05-25"
+    },
+    {
+      "id": 1779663726823,
+      "label": "Vacuum Upstairs Rug",
+      "done": true,
+      "type": "recurring",
+      "recId": "rec-1775934698800",
+      "sourceLabel": "Vacuum Upstairs Rug",
+      "date": "2026-05-26"
+    },
+    {
+      "id": 1779734927198,
+      "label": "Read Chapter 5 and complete its quiz",
+      "done": true,
+      "type": "chunk",
+      "projectId": "unit-3-readings-and--1779224168380",
+      "projectTitle": "Unit 3 Readings and Quizzes",
+      "chunkIdx": 1,
+      "date": "2026-05-25"
+    },
+    {
+      "id": 1779810929262,
+      "label": "Make my bed",
+      "done": true,
+      "type": "recurring",
+      "recId": "rec-1777917474295",
+      "sourceLabel": "Make my bed",
+      "date": "2026-05-26"
+    },
+    {
+      "id": 1779810961998,
+      "label": "Read Chapter 6 and complete its quiz",
+      "done": true,
+      "type": "chunk",
+      "projectId": "unit-3-readings-and--1779224168380",
+      "projectTitle": "Unit 3 Readings and Quizzes",
+      "chunkIdx": 2,
+      "date": "2026-05-26"
+    },
+    {
+      "id": 1779810988795,
+      "label": "Open the worksheet file (PresidentialCandidatePlatform-2.docx) and read through all the prompts so you know exactly what's being asked — don't fill anything in yet, just get familiar with it. (5 min)",
+      "done": true,
+      "type": "chunk",
+      "projectId": "presidential-candida-1779223775096",
+      "projectTitle": "Presidential Candidate's Platform",
+      "chunkIdx": 0,
+      "date": "2026-05-26"
+    },
+    {
+      "id": 1779810992289,
+      "label": "Pick your fictional presidential candidate: choose a name, a political party (real or made-up), and jot down 2–3 issues they care most about. This is your foundation. (10–15 min)",
+      "done": true,
+      "type": "chunk",
+      "projectId": "presidential-candida-1779223775096",
+      "projectTitle": "Presidential Candidate's Platform",
+      "chunkIdx": 1,
+      "date": "2026-05-26"
+    },
+    {
+      "id": 1779810996014,
+      "label": "Fill in the platform positions section of the worksheet — write 1–3 sentences per issue explaining where your candidate stands and why. Aim for at least 3 issues total. (20–30 min)",
+      "done": true,
+      "type": "chunk",
+      "projectId": "presidential-candida-1779223775096",
+      "projectTitle": "Presidential Candidate's Platform",
+      "chunkIdx": 2,
+      "date": "2026-05-26"
+    },
+    {
+      "id": 1779811006038,
+      "label": "Open PowerPoint and create a title slide with your candidate's name, a photo, and the tagline '2028 Presidential Campaign'",
+      "done": true,
+      "type": "chunk",
+      "projectId": "presidential-campaig-1779223714383",
+      "projectTitle": "Presidential Campaign Final Presentation",
+      "chunkIdx": 1,
+      "date": "2026-05-27"
+    },
+    {
+      "id": 1779862550402,
+      "label": "Read Chapter 7 and complete its quiz",
+      "done": true,
+      "type": "chunk",
+      "projectId": "unit-3-readings-and--1779224168380",
+      "projectTitle": "Unit 3 Readings and Quizzes",
+      "chunkIdx": 3,
+      "date": "2026-05-27"
+    },
+    {
+      "id": 1779862561620,
+      "label": "Finish blocker assignments first (Candidate Essay + Candidate Platform) — these must be done before you can start the presentation",
+      "done": true,
+      "type": "chunk",
+      "projectId": "presidential-campaig-1779223714383",
+      "projectTitle": "Presidential Campaign Final Presentation",
+      "chunkIdx": 0,
+      "date": "2026-05-27"
+    },
+    {
+      "id": 1779862574395,
+      "label": "Build slides 2–5: Who is your candidate? Include their background, major civil rights contributions, and 1–2 images of them or their cause",
+      "done": true,
+      "type": "chunk",
+      "projectId": "presidential-campaig-1779223714383",
+      "projectTitle": "Presidential Campaign Final Presentation",
+      "chunkIdx": 2,
+      "date": "2026-05-28"
+    },
+    {
+      "id": 1779862583671,
+      "label": "Read Chapter 8 and complete its quiz",
+      "done": true,
+      "type": "chunk",
+      "projectId": "unit-3-readings-and--1779224168380",
+      "projectTitle": "Unit 3 Readings and Quizzes",
+      "chunkIdx": 4,
+      "date": "2026-05-28"
+    },
+    {
+      "id": 1779862605259,
+      "label": "Read Chapter 9 and complete its quiz",
+      "done": true,
+      "type": "chunk",
+      "projectId": "unit-3-readings-and--1779224168380",
+      "projectTitle": "Unit 3 Readings and Quizzes",
+      "chunkIdx": 5,
+      "date": "2026-05-29"
+    },
+    {
+      "id": 1779862614152,
+      "label": "Read Chapter 10 and complete its quiz",
+      "done": true,
+      "type": "chunk",
+      "projectId": "unit-3-readings-and--1779224168380",
+      "projectTitle": "Unit 3 Readings and Quizzes",
+      "chunkIdx": 6,
+      "date": "2026-05-30"
+    },
+    {
+      "id": 1779994958276,
+      "label": "Build slides 6–9: Pick 3–4 current issues (e.g. immigration, gun control, healthcare) and add one slide per issue showing your candidate's stance in bullet points",
+      "done": true,
+      "type": "chunk",
+      "projectId": "presidential-campaig-1779223714383",
+      "projectTitle": "Presidential Campaign Final Presentation",
+      "chunkIdx": 3,
+      "date": "2026-05-28"
+    },
+    {
+      "id": 1779994959925,
+      "label": "Add a slide naming at least one interest group that would support your candidate and briefly explain why",
+      "done": true,
+      "type": "chunk",
+      "projectId": "presidential-campaig-1779223714383",
+      "projectTitle": "Presidential Campaign Final Presentation",
+      "chunkIdx": 4,
+      "date": "2026-05-28"
+    },
+    {
+      "id": 1779994961111,
+      "label": "Polish the deck — make slides colorful, remove walls of text, and add images to any slides that are bare",
+      "done": true,
+      "type": "chunk",
+      "projectId": "presidential-campaig-1779223714383",
+      "projectTitle": "Presidential Campaign Final Presentation",
+      "chunkIdx": 5,
+      "date": "2026-05-28"
+    },
+    {
+      "id": 1779994962495,
+      "label": "Add a Works Cited slide listing all sources and image credits (this slide does not count toward your 10-slide minimum)",
+      "done": true,
+      "type": "chunk",
+      "projectId": "presidential-campaig-1779223714383",
+      "projectTitle": "Presidential Campaign Final Presentation",
+      "chunkIdx": 6,
+      "date": "2026-05-28"
+    },
+    {
+      "id": 1780067726293,
+      "label": "top off gas",
       "done": true,
       "type": "standalone",
-      "date": "2026-04-06"
+      "date": "2026-05-29"
+    },
+    {
+      "id": 1780067733050,
+      "label": "pick up prescriptions",
+      "done": true,
+      "type": "standalone",
+      "date": "2026-05-29"
+    },
+    {
+      "id": 1780368426489,
+      "label": "Vacuum Upstairs Rug",
+      "done": true,
+      "type": "recurring",
+      "recId": "rec-1775934698800",
+      "sourceLabel": "Vacuum Upstairs Rug",
+      "date": "2026-06-01"
+    },
+    {
+      "id": 1780368431956,
+      "label": "Wash Sheets",
+      "done": true,
+      "type": "recurring",
+      "recId": "rec-1775188819984",
+      "sourceLabel": "Wash Sheets",
+      "date": "2026-06-01"
+    },
+    {
+      "id": 1780368551097,
+      "label": "Gather everything: collect all notes, slides, past quizzes, and any study guides into one folder (physical or digital). Just collecting, nothing else.",
+      "done": true,
+      "type": "chunk",
+      "projectId": "final-cumulative-exa-1779224276110",
+      "projectTitle": "Final Cumulative Exam",
+      "chunkIdx": 0,
+      "date": "2026-06-02"
+    },
+    {
+      "id": 1780368552224,
+      "label": "Skim all materials for 20 min: flip through everything without reading deeply — just flag topics that feel unfamiliar or scary with a sticky note or highlight.",
+      "done": true,
+      "type": "chunk",
+      "projectId": "final-cumulative-exa-1779224276110",
+      "projectTitle": "Final Cumulative Exam",
+      "chunkIdx": 1,
+      "date": "2026-06-02"
+    },
+    {
+      "id": 1780368553360,
+      "label": "Review past quizzes: go through each quiz you've taken, note which questions you got wrong, and write a one-sentence explanation of the right answer.",
+      "done": true,
+      "type": "chunk",
+      "projectId": "final-cumulative-exa-1779224276110",
+      "projectTitle": "Final Cumulative Exam",
+      "chunkIdx": 2,
+      "date": "2026-06-02"
+    },
+    {
+      "id": 1780368578890,
+      "label": "Gather everything: collect all notes, slides, past quizzes, and any study guides into one folder (physical or digital). Just collecting, nothing else.",
+      "done": true,
+      "type": "chunk",
+      "projectId": "final-cumulative-exa-1779224276110",
+      "projectTitle": "Final Cumulative Exam",
+      "chunkIdx": 0,
+      "date": "2026-06-01"
+    },
+    {
+      "id": 1780368582017,
+      "label": "Skim all materials for 20 min: flip through everything without reading deeply — just flag topics that feel unfamiliar or scary with a sticky note or highlight.",
+      "done": true,
+      "type": "chunk",
+      "projectId": "final-cumulative-exa-1779224276110",
+      "projectTitle": "Final Cumulative Exam",
+      "chunkIdx": 1,
+      "date": "2026-06-01"
+    },
+    {
+      "id": 1780368583289,
+      "label": "Review past quizzes: go through each quiz you've taken, note which questions you got wrong, and write a one-sentence explanation of the right answer.",
+      "done": true,
+      "type": "chunk",
+      "projectId": "final-cumulative-exa-1779224276110",
+      "projectTitle": "Final Cumulative Exam",
+      "chunkIdx": 2,
+      "date": "2026-06-01"
+    },
+    {
+      "id": 1780368584507,
+      "label": "Deep review — Part 1: pick the first half of the course topics and spend one focused session re-reading notes or slides on those only.",
+      "done": true,
+      "type": "chunk",
+      "projectId": "final-cumulative-exa-1779224276110",
+      "projectTitle": "Final Cumulative Exam",
+      "chunkIdx": 3,
+      "date": "2026-06-01"
+    },
+    {
+      "id": 1780368585474,
+      "label": "Deep review — Part 2: repeat the same focused session for the second half of the course topics.",
+      "done": true,
+      "type": "chunk",
+      "projectId": "final-cumulative-exa-1779224276110",
+      "projectTitle": "Final Cumulative Exam",
+      "chunkIdx": 4,
+      "date": "2026-06-01"
+    },
+    {
+      "id": 1780368586566,
+      "label": "Practice quiz with Claude: ask Claude to quiz you on the topics you flagged as fuzzy. Do it out loud or typed, low stakes, just to see what sticks.",
+      "done": true,
+      "type": "chunk",
+      "projectId": "final-cumulative-exa-1779224276110",
+      "projectTitle": "Final Cumulative Exam",
+      "chunkIdx": 5,
+      "date": "2026-06-01"
+    },
+    {
+      "id": 1780368591055,
+      "label": "Full practice exam with Claude: ask Claude to simulate a full cumulative exam under mild time pressure. Review every answer afterward.",
+      "done": true,
+      "type": "chunk",
+      "projectId": "final-cumulative-exa-1779224276110",
+      "projectTitle": "Final Cumulative Exam",
+      "chunkIdx": 6,
+      "date": "2026-06-01"
+    },
+    {
+      "id": 1780368592039,
+      "label": "Final weak-spot pass: based on the practice exam, spend one last session only on the 2–3 topics where you lost the most points.",
+      "done": true,
+      "type": "chunk",
+      "projectId": "final-cumulative-exa-1779224276110",
+      "projectTitle": "Final Cumulative Exam",
+      "chunkIdx": 7,
+      "date": "2026-06-01"
+    },
+    {
+      "id": 1781112905346,
+      "label": "Vacuum Upstairs Rug",
+      "done": true,
+      "type": "recurring",
+      "recId": "rec-1775934698800",
+      "sourceLabel": "Vacuum Upstairs Rug",
+      "date": "2026-06-10"
+    },
+    {
+      "id": 1781536500354,
+      "label": "Laundry",
+      "done": false,
+      "type": "recurring",
+      "recId": "rec-1775188833910",
+      "sourceLabel": "Laundry",
+      "date": "2026-06-15"
+    },
+    {
+      "id": 1781536504867,
+      "label": "Vacuum Upstairs Rug",
+      "done": false,
+      "type": "recurring",
+      "recId": "rec-1775934698800",
+      "sourceLabel": "Vacuum Upstairs Rug",
+      "date": "2026-06-15"
+    },
+    {
+      "id": 1781536518350,
+      "label": "Make at least $50 in insta cart",
+      "done": false,
+      "type": "standalone",
+      "date": "2026-06-15"
+    },
+    {
+      "id": 1781536537989,
+      "label": "Doctor's Appt",
+      "done": false,
+      "type": "standalone",
+      "date": "2026-06-15"
     }
   ],
   "recurring": [
-    {
-      "id": "instacart",
-      "name": "Instacart runs",
-      "type": "count",
-      "target": 3,
-      "freq": "weekly",
-      "history": {
-        "2026-03-29": 2
-      }
-    },
     {
       "id": "rec-1775188819984",
       "name": "Wash Sheets",
@@ -576,7 +2115,9 @@
       "target": 1,
       "freq": "2w",
       "history": {
-        "2w-1467": 1
+        "2w-1467": 1,
+        "2w-1470": 1,
+        "2w-1471": 1
       }
     },
     {
@@ -586,7 +2127,10 @@
       "target": 1,
       "freq": "weekly",
       "history": {
-        "2026-03-29": 1
+        "2026-03-29": 1,
+        "2026-04-05": 1,
+        "2026-05-10": 1,
+        "2026-05-17": 1
       }
     },
     {
@@ -596,7 +2140,37 @@
       "target": 1,
       "freq": "monthly",
       "history": {}
+    },
+    {
+      "id": "rec-1775934698800",
+      "name": "Vacuum Upstairs Rug",
+      "type": "toggle",
+      "target": 1,
+      "freq": "3",
+      "history": {
+        "nd-33": 1,
+        "nd-40": 1,
+        "nd-41": 1,
+        "nd-43": 1,
+        "nd-46": 1,
+        "nd-48": 1,
+        "nd-50": 1,
+        "nd-53": 1
+      }
+    },
+    {
+      "id": "rec-1775934708715",
+      "name": "Vacuum Stairs",
+      "type": "toggle",
+      "target": 1,
+      "freq": "weekly",
+      "history": {
+        "2026-04-05": 1,
+        "2026-04-26": 1,
+        "2026-05-10": 1,
+        "2026-05-31": 1
+      }
     }
   ],
-  "exported": "2026-04-06T20:33:23.448Z"
+  "exported": "2026-06-15T20:40:09.697Z"
 }
