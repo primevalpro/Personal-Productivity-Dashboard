@@ -1,0 +1,602 @@
+{
+  "projects": [
+    {
+      "id": "history",
+      "title": "History exam",
+      "due": "Apr 7",
+      "daysLeft": 3,
+      "chunks": [
+        {
+          "label": "Chapter 6",
+          "done": true
+        },
+        {
+          "label": "Chapter 7",
+          "done": true
+        },
+        {
+          "label": "Chapter 8",
+          "done": true
+        },
+        {
+          "label": "Chapter 9",
+          "done": true,
+          "note": "pp. 217-235"
+        },
+        {
+          "label": "Chapter 12",
+          "done": true
+        },
+        {
+          "label": "Create Study Chat in history project in Claude as a study aid",
+          "done": true
+        },
+        {
+          "label": "Study Session 1",
+          "done": true
+        },
+        {
+          "label": "Study Session 2",
+          "done": true
+        },
+        {
+          "label": "Study Session 3",
+          "done": true
+        },
+        {
+          "label": "Study Session 4",
+          "done": false
+        },
+        {
+          "label": "Create index card for exam",
+          "done": true
+        }
+      ],
+      "archived": false,
+      "dueBeforeDay": true
+    },
+    {
+      "id": "dnd",
+      "title": "DND session 2",
+      "due": "Apr 10",
+      "daysLeft": 9,
+      "chunks": [
+        {
+          "label": "Kingdom map with labeled districts",
+          "done": true
+        },
+        {
+          "label": "District maps with NPCs and token citizens",
+          "done": true
+        },
+        {
+          "label": "Workshop encounter",
+          "done": true
+        },
+        {
+          "label": "NPC, dialogue, lore, and plan for each area",
+          "done": true
+        },
+        {
+          "label": "Road map to new area",
+          "done": false
+        },
+        {
+          "label": "Goblin camp map + goblin NPCs",
+          "done": false
+        },
+        {
+          "label": "Fishing village map (main encounter)",
+          "done": false
+        },
+        {
+          "label": "Encounter loot",
+          "done": false
+        },
+        {
+          "label": "Innkeeper dialogue",
+          "done": false
+        }
+      ]
+    },
+    {
+      "id": "register",
+      "title": "Register for classes",
+      "due": "Apr 14",
+      "daysLeft": 13,
+      "chunks": [
+        {
+          "label": "Log into student portal and confirm registration window is open",
+          "done": true
+        },
+        {
+          "label": "Pull up degree plan and identify what you still need",
+          "done": true
+        },
+        {
+          "label": "Draft list of target courses + backups for each",
+          "done": true
+        },
+        {
+          "label": "Schedule advisor appointment",
+          "done": true,
+          "note": "Critical path — do this today"
+        },
+        {
+          "label": "Attend advisor meeting and get any required sign-offs",
+          "done": true
+        },
+        {
+          "label": "Register for classes",
+          "done": false
+        },
+        {
+          "label": "Create Schedule",
+          "done": true
+        }
+      ]
+    },
+    {
+      "id": "taxes",
+      "title": "Taxes",
+      "due": "Apr 15",
+      "daysLeft": 14,
+      "chunks": [
+        {
+          "label": "Find best way to access all tax documents",
+          "done": false
+        },
+        {
+          "label": "Secure current year documents and filings",
+          "done": false
+        },
+        {
+          "label": "Figure out how to file for previous years",
+          "done": false
+        },
+        {
+          "label": "Begin filling out relevant forms",
+          "done": false
+        },
+        {
+          "label": "Determine total amount due or owed",
+          "done": false
+        },
+        {
+          "label": "Talk to dad about amount due",
+          "done": false
+        }
+      ]
+    },
+    {
+      "id": "gov",
+      "title": "Public meeting: government",
+      "due": "May 4",
+      "daysLeft": 33,
+      "chunks": [
+        {
+          "label": "Choose event",
+          "done": true
+        },
+        {
+          "label": "Complete outline",
+          "done": true
+        },
+        {
+          "label": "Fill out pre-meeting section",
+          "done": false
+        },
+        {
+          "label": "Fill out pre-meeting agenda section",
+          "done": false,
+          "note": "After agenda posts"
+        },
+        {
+          "label": "Attend meeting",
+          "done": false
+        },
+        {
+          "label": "Fill out meeting section",
+          "done": false
+        },
+        {
+          "label": "Fill out post-meeting section",
+          "done": false
+        },
+        {
+          "label": "Edit and finalize",
+          "done": false
+        }
+      ],
+      "archived": false
+    },
+    {
+      "id": "policy",
+      "title": "Policy case study",
+      "due": "May 8",
+      "daysLeft": 37,
+      "chunks": [
+        {
+          "label": "Select policy + determine framing",
+          "done": true
+        },
+        {
+          "label": "Explore context around the policy",
+          "done": false
+        },
+        {
+          "label": "Explore divisions of political power",
+          "done": false
+        },
+        {
+          "label": "Identify government actors (name names)",
+          "done": false
+        },
+        {
+          "label": "Identify interest groups and opposition",
+          "done": false
+        },
+        {
+          "label": "Evaluate policy and predict future",
+          "done": false
+        },
+        {
+          "label": "Compile, format, and submit",
+          "done": false
+        }
+      ],
+      "archived": false
+    },
+    {
+      "id": "hume-and-kant-exam-1775323341589",
+      "title": "Hume and Kant Exam",
+      "due": "Apr 13",
+      "daysLeft": 8,
+      "dueBeforeDay": true,
+      "chunks": [
+        {
+          "label": "Create a new project folder in Claude and upload all relevant documents (notes, readings, syllabus, past exams)",
+          "done": true,
+          "note": "Do this before anything else — the folder unlocks everything below"
+        },
+        {
+          "label": "Study Session 1: Open your notes and list every major topic Hume covers — just make the list, nothing else",
+          "done": false
+        },
+        {
+          "label": "Study Session 2: Open your notes and list every major topic Kant covers — just make the list, nothing else",
+          "done": false
+        },
+        {
+          "label": "Study Session 3: Pick the 3 hardest Hume concepts from your list and explain each one out loud or in writing in your own words",
+          "done": false,
+          "note": "Use your uploaded docs to check yourself after"
+        },
+        {
+          "label": "Study Session 4: Pick the 3 hardest Kant concepts from your list and explain each one out loud or in writing in your own words",
+          "done": false,
+          "note": "Use your uploaded docs to check yourself after"
+        },
+        {
+          "label": "Study Session 5: Do a timed practice run — answer 3-5 likely exam questions from memory, then review gaps",
+          "done": false,
+          "note": "Complete this at least 1 day before April 13th"
+        },
+        {
+          "label": "Do Practice exams in Claude",
+          "done": false
+        },
+        {
+          "label": "Practice Exams again",
+          "done": false
+        }
+      ]
+    }
+  ],
+  "debriefs": [
+    {
+      "date": "Fri, Apr 3",
+      "did": "I did my laundry, did an insta cart run, did some reading towards my history exam, and scheduled my classes so they are ready for registration. I also read chapter 12 of my text book, so all i have left for history is to finish reading the final chapter and study. I have done well the last couple days",
+      "fire": "",
+      "enough": "I have caught up to where i need to be for Texas History and did another Instacart run.",
+      "fireState": "no"
+    },
+    {
+      "date": "Thu, Apr 2",
+      "did": "I met with an advisor and planned out the next few semesters of school, I did a couple hours of insta cart, and I read most of capter 8 from my us history text book. I still have a couple tasks undone, but I am going to give myself grace on those, I did the 2 most important tasks for today, and I have been sleeping very poorly latetly, making it harder to be productive today.",
+      "fire": "Texas History is behind schedule, but it is manageable. I just need to spend a couple hours tomorrow to catch up and I'll be done",
+      "enough": "I did the 2 most important tasks, I did an insta cart run, and I still have plenty of time to complete my upcoming projects by their due dates. Not every day has to be perfect, it just needs to be enough, and today was enough",
+      "fireState": "yes"
+    },
+    {
+      "date": "Wed, Apr 1",
+      "did": "Studied for philosophy before class. Chose a meeting and created an outline for the public meeting project. Read Chapter 7 for Texas History. Built the Personal OS dashboard as a tool to better organize and visualize proof of successful long-term task management.",
+      "fire": "",
+      "tomorrow": "Chapter 8 — Texas History",
+      "enough": "I am doing enough, I am doing well, and this dashboard will help reinforce that until the defense mechanism starts to fade.",
+      "fireState": "no"
+    }
+  ],
+  "bucket": [
+    {
+      "id": 1775253581184,
+      "text": "Fix bedroom light"
+    }
+  ],
+  "today": [
+    {
+      "id": 1775098944594,
+      "label": "Schedule advisor appointment",
+      "done": true,
+      "type": "chunk",
+      "projectId": "register",
+      "projectTitle": "Register for classes",
+      "chunkIdx": 3,
+      "date": "2026-04-03"
+    },
+    {
+      "id": 1775152609056,
+      "label": "Attend advisor meeting and get any required sign-offs",
+      "done": true,
+      "type": "chunk",
+      "projectId": "register",
+      "projectTitle": "Register for classes",
+      "chunkIdx": 4,
+      "date": "2026-04-02"
+    },
+    {
+      "id": 1775152786043,
+      "label": "Chapter 8",
+      "done": true,
+      "type": "chunk",
+      "projectId": "history",
+      "projectTitle": "History exam",
+      "chunkIdx": 2,
+      "date": "2026-04-02"
+    },
+    {
+      "id": 1775153364772,
+      "label": "Instacart Run",
+      "done": true,
+      "type": "standalone",
+      "date": "2026-04-02"
+    },
+    {
+      "id": 1775188365475,
+      "label": "Chapter 12",
+      "done": true,
+      "type": "chunk",
+      "projectId": "history",
+      "projectTitle": "History exam",
+      "chunkIdx": 4,
+      "date": "2026-04-03"
+    },
+    {
+      "id": 1775188378074,
+      "label": "Road map to new area",
+      "done": false,
+      "type": "chunk",
+      "projectId": "dnd",
+      "projectTitle": "DND session 2",
+      "chunkIdx": 4,
+      "date": "2026-04-04"
+    },
+    {
+      "id": 1775236344216,
+      "label": "Start laundry",
+      "done": true,
+      "type": "standalone",
+      "date": "2026-04-03"
+    },
+    {
+      "id": 1775236357401,
+      "label": "Move laundry to dryer",
+      "done": true,
+      "type": "standalone",
+      "date": "2026-04-03"
+    },
+    {
+      "id": 1775254977795,
+      "label": "Instacart runs (2/3)",
+      "done": true,
+      "type": "recurring",
+      "recId": "instacart",
+      "sourceLabel": "Instacart runs",
+      "date": "2026-04-03"
+    },
+    {
+      "id": 1775254982396,
+      "label": "Laundry",
+      "done": true,
+      "type": "recurring",
+      "recId": "rec-1775188833910",
+      "sourceLabel": "Laundry",
+      "date": "2026-04-03"
+    },
+    {
+      "id": 1775255157151,
+      "label": "Create Study Chat in history project in Claude as a study aid",
+      "done": true,
+      "type": "chunk",
+      "projectId": "history",
+      "projectTitle": "History exam",
+      "chunkIdx": 5,
+      "date": "2026-04-04"
+    },
+    {
+      "id": 1775255160443,
+      "label": "Study Session 1",
+      "done": true,
+      "type": "chunk",
+      "projectId": "history",
+      "projectTitle": "History exam",
+      "chunkIdx": 6,
+      "date": "2026-04-04"
+    },
+    {
+      "id": 1775255162999,
+      "label": "Study Session 2",
+      "done": false,
+      "type": "chunk",
+      "projectId": "history",
+      "projectTitle": "History exam",
+      "chunkIdx": 7,
+      "date": "2026-04-04"
+    },
+    {
+      "id": 1775255241517,
+      "label": "Goblin camp map + goblin NPCs",
+      "done": false,
+      "type": "chunk",
+      "projectId": "dnd",
+      "projectTitle": "DND session 2",
+      "chunkIdx": 5,
+      "date": "2026-04-04"
+    },
+    {
+      "id": 1775255633818,
+      "label": "Chapter 9",
+      "done": true,
+      "type": "chunk",
+      "projectId": "history",
+      "projectTitle": "History exam",
+      "chunkIdx": 3,
+      "date": "2026-04-04"
+    },
+    {
+      "id": 1775268419834,
+      "label": "Create Schedule",
+      "done": true,
+      "type": "chunk",
+      "projectId": "register",
+      "projectTitle": "Register for classes",
+      "chunkIdx": 6,
+      "date": "2026-04-03"
+    },
+    {
+      "id": 1775268449968,
+      "label": "Fill out pre-meeting section",
+      "done": false,
+      "type": "chunk",
+      "projectId": "gov",
+      "projectTitle": "Public meeting: government",
+      "chunkIdx": 2,
+      "date": "2026-04-04"
+    },
+    {
+      "id": 1775420439461,
+      "label": "Study Session 2",
+      "done": true,
+      "type": "chunk",
+      "projectId": "history",
+      "projectTitle": "History exam",
+      "chunkIdx": 7,
+      "date": "2026-04-05"
+    },
+    {
+      "id": 1775420442869,
+      "label": "Study Session 3",
+      "done": false,
+      "type": "chunk",
+      "projectId": "history",
+      "projectTitle": "History exam",
+      "chunkIdx": 8,
+      "date": "2026-04-05"
+    },
+    {
+      "id": 1775420456569,
+      "label": "Create a new project folder in Claude and upload all relevant documents (notes, readings, syllabus, past exams)",
+      "done": true,
+      "type": "chunk",
+      "projectId": "hume-and-kant-exam-1775323341589",
+      "projectTitle": "Hume and Kant Exam",
+      "chunkIdx": 0,
+      "date": "2026-04-05"
+    },
+    {
+      "id": 1775422831226,
+      "label": "Study Session 4",
+      "done": false,
+      "type": "chunk",
+      "projectId": "history",
+      "projectTitle": "History exam",
+      "chunkIdx": 9,
+      "date": "2026-04-06"
+    },
+    {
+      "id": 1775422833451,
+      "label": "Create index card for exam",
+      "done": true,
+      "type": "chunk",
+      "projectId": "history",
+      "projectTitle": "History exam",
+      "chunkIdx": 10,
+      "date": "2026-04-06"
+    },
+    {
+      "id": 1775488064725,
+      "label": "Study Session 3",
+      "done": true,
+      "type": "chunk",
+      "projectId": "history",
+      "projectTitle": "History exam",
+      "chunkIdx": 8,
+      "date": "2026-04-06"
+    },
+    {
+      "id": 1775488808914,
+      "label": "Get BP measurement for Dr Martin",
+      "done": true,
+      "type": "standalone",
+      "date": "2026-04-06"
+    },
+    {
+      "id": 1775492419914,
+      "label": "Make bed",
+      "done": true,
+      "type": "standalone",
+      "date": "2026-04-06"
+    }
+  ],
+  "recurring": [
+    {
+      "id": "instacart",
+      "name": "Instacart runs",
+      "type": "count",
+      "target": 3,
+      "freq": "weekly",
+      "history": {
+        "2026-03-29": 2
+      }
+    },
+    {
+      "id": "rec-1775188819984",
+      "name": "Wash Sheets",
+      "type": "toggle",
+      "target": 1,
+      "freq": "2w",
+      "history": {
+        "2w-1467": 1
+      }
+    },
+    {
+      "id": "rec-1775188833910",
+      "name": "Laundry",
+      "type": "toggle",
+      "target": 1,
+      "freq": "weekly",
+      "history": {
+        "2026-03-29": 1
+      }
+    },
+    {
+      "id": "rec-1775188844307",
+      "name": "Clean Litter Box",
+      "type": "toggle",
+      "target": 1,
+      "freq": "monthly",
+      "history": {}
+    }
+  ],
+  "exported": "2026-04-06T20:33:23.448Z"
+}
