@@ -414,15 +414,6 @@ textarea:focus{border-color:var(--border2);}
   </div>
 </div>
 
-<div class="modal-backdrop" id="import-modal">
-  <div class="modal">
-    <div class="modal-title">Import dashboard data</div>
-    <div class="modal-sub">// paste exported JSON to restore your data</div>
-    <textarea class="modal-input" id="import-text" style="min-height:100px;resize:vertical;font-family:var(--mono);font-size:11px;"></textarea>
-    <div style="color:var(--danger);font-size:11px;font-family:var(--mono);margin-top:6px;display:none;" id="import-error">// invalid JSON</div>
-    <div class="modal-actions"><button class="modal-cancel" onclick="closeModal('import-modal')">Cancel</button><button class="modal-confirm" onclick="confirmImport()">Import →</button></div>
-  </div>
-</div>
 
 <div class="modal-backdrop" id="incomplete-modal">
   <div class="modal" style="max-width:500px;">
@@ -601,8 +592,6 @@ textarea:focus{border-color:var(--border2);}
   </div>
   <div class="topbar-actions">
     <button class="icon-btn" onclick="openAnalyze()">↗ Trends</button>
-    <button class="icon-btn" onclick="exportData()">↑ Export</button>
-    <button class="icon-btn" onclick="openModal('import-modal')">↓ Import</button>
     <button class="icon-btn" onclick="signOut()">Sign out</button>
   </div>
 </div>
@@ -842,7 +831,7 @@ async function init(){
 
 function openModal(id){document.getElementById(id).classList.add('open');}
 function closeModal(id){document.getElementById(id).classList.remove('open');}
-['promote-modal','import-modal','incomplete-modal','tomorrow-modal','rec-modal','add-from-modal','analyze-modal','value-entry-modal','fund-modal','fund-contrib-modal','cal-assign-modal','cal-day-panel'].forEach(id=>{const el=document.getElementById(id);if(el)el.addEventListener('click',function(e){if(e.target===this)closeModal(id);});});
+['promote-modal','incomplete-modal','tomorrow-modal','rec-modal','add-from-modal','analyze-modal','value-entry-modal','fund-modal','fund-contrib-modal','cal-assign-modal','cal-day-panel'].forEach(id=>{const el=document.getElementById(id);if(el)el.addEventListener('click',function(e){if(e.target===this)closeModal(id);});});
 
 function getLocalKey(offset=0){const d=new Date();d.setDate(d.getDate()+offset);return`${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;}
 function getTodayKey(){return getLocalKey(0);}
@@ -929,33 +918,6 @@ function confirmAddFrom(){
   }
   saveData();closeModal('add-from-modal');
   if(afDay==='tomorrow')renderTomorrow();else renderToday();
-}
-
-function exportData(){
-  const p={projects,debriefs,bucket,today:todayTasks,recurring,exported:new Date().toISOString()};
-  const json=JSON.stringify(p,null,2);
-  if(navigator.clipboard?.writeText)navigator.clipboard.writeText(json).then(()=>showExportModal(json,true)).catch(()=>showExportModal(json,false));
-  else showExportModal(json,false);
-}
-function showExportModal(json,copied){
-  const modal=document.getElementById('import-modal');
-  modal.querySelector('.modal-title').textContent='Export data';
-  modal.querySelector('.modal-sub').textContent=copied?'// ✓ copied to clipboard':'// copy this JSON and save it';
-  const ta=document.getElementById('import-text');ta.value=json;ta.readOnly=true;
-  document.getElementById('import-error').style.display='none';
-  const btn=modal.querySelector('.modal-confirm');btn.textContent='Done';
-  btn.onclick=()=>{ta.readOnly=false;modal.querySelector('.modal-title').textContent='Import dashboard data';modal.querySelector('.modal-sub').textContent='// paste exported JSON to restore your data';btn.textContent='Import →';btn.onclick=confirmImport;ta.value='';closeModal('import-modal');};
-  openModal('import-modal');
-}
-function confirmImport(){
-  const text=document.getElementById('import-text').value.trim();
-  const err=document.getElementById('import-error');err.style.display='none';
-  try{
-    const d=JSON.parse(text);if(!d.projects)throw new Error();
-    projects=d.projects;debriefs=d.debriefs||[];bucket=d.bucket||[];todayTasks=d.today||[];recurring=d.recurring||[];funds=d.funds||[];
-    saveData();closeModal('import-modal');document.getElementById('import-text').value='';
-    renderToday();renderProjects();renderBucket();renderHistory();
-  }catch(e){err.style.display='block';}
 }
 
 // ── ANALYZE TRENDS ──
