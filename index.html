@@ -332,8 +332,19 @@ textarea:focus{border-color:var(--border2);}
 ::-webkit-scrollbar{width:4px;}::-webkit-scrollbar-track{background:transparent;}::-webkit-scrollbar-thumb{background:var(--bg4);border-radius:2px;}
 @media(max-width:560px){.metrics{grid-template-columns:repeat(2,minmax(0,1fr));}.section-btn{padding:8px 10px;font-size:11px;}.sub-btn{padding:6px 10px;font-size:11px;}}
 </style>
+<script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore-compat.js"></script>
 </head>
 <body>
+
+<!-- AUTH SCREEN -->
+<div id="auth-screen" style="position:fixed;inset:0;background:var(--bg);z-index:200;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:16px;">
+  <div style="font-family:var(--mono);font-size:13px;color:var(--accent);letter-spacing:0.12em;text-transform:uppercase;">Personal OS</div>
+  <div style="font-family:var(--mono);font-size:11px;color:var(--text3);">// sign in to continue</div>
+  <button onclick="signInWithGoogle()" style="padding:10px 24px;background:var(--bg2);border:1px solid var(--border2);border-radius:var(--radius);font-size:13px;font-family:var(--font);color:var(--text2);cursor:pointer;transition:all 0.15s;">Sign in with Google</button>
+  <div id="auth-error" style="font-family:var(--mono);font-size:11px;color:var(--danger);display:none;max-width:300px;text-align:center;"></div>
+</div>
 
 <!-- ADD FROM MODAL -->
 <div class="modal-backdrop" id="add-from-modal">
@@ -592,6 +603,7 @@ textarea:focus{border-color:var(--border2);}
     <button class="icon-btn" onclick="openAnalyze()">↗ Trends</button>
     <button class="icon-btn" onclick="exportData()">↑ Export</button>
     <button class="icon-btn" onclick="openModal('import-modal')">↓ Import</button>
+    <button class="icon-btn" onclick="signOut()">Sign out</button>
   </div>
 </div>
 <div class="sub-nav" id="sub-nav"></div>
@@ -710,6 +722,30 @@ textarea:focus{border-color:var(--border2);}
 </div>
 
 <script>
+const firebaseConfig={
+  apiKey:"AIzaSyB3wr4LQmg7-TpDp7iO61IWm_pdIqhvu5s",
+  authDomain:"personal-dashboard-2b869.firebaseapp.com",
+  projectId:"personal-dashboard-2b869",
+  storageBucket:"personal-dashboard-2b869.firebasestorage.app",
+  messagingSenderId:"284269289753",
+  appId:"1:284269289753:web:5c8a86fd7131bbb3812588"
+};
+firebase.initializeApp(firebaseConfig);
+const auth=firebase.auth();
+const db=firebase.firestore();
+const FS_COLLECTION='personal_os';
+const FS_DOC='dashboard_data';
+
+function signInWithGoogle(){
+  const provider=new firebase.auth.GoogleAuthProvider();
+  const errEl=document.getElementById('auth-error');
+  if(errEl){errEl.style.display='none';errEl.textContent='';}
+  auth.signInWithPopup(provider).catch(err=>{
+    if(errEl){errEl.textContent='// '+err.message;errEl.style.display='block';}
+  });
+}
+function signOut(){auth.signOut();}
+
 const STORE_KEY='pos_data_v1';
 // Removed 'recurring' from plan section — now merged into projects
 const SECTIONS={now:['today','tomorrow'],plan:['projects','calendar'],review:['debrief','history','archive','stats'],capture:['bucket']};
@@ -794,8 +830,8 @@ function formatValue(amount,unit){
   return`${num}${u?' '+u:''}`;
 }
 
-async function loadData(){try{const r=await window.storage.get(STORE_KEY);if(r&&r.value)return JSON.parse(r.value);}catch(e){}try{const v=localStorage.getItem(STORE_KEY);if(v)return JSON.parse(v);}catch(e){}return null;}
-async function saveData(){const p=JSON.stringify({projects,debriefs,bucket,today:todayTasks,recurring,wellbeing,deferrals,funds,dailyLimit});try{await window.storage.set(STORE_KEY,p);}catch(e){}try{localStorage.setItem(STORE_KEY,p);}catch(e){}}
+async function loadData(){try{const snap=await db.collection(FS_COLLECTION).doc(FS_DOC).get();if(snap.exists)return snap.data();}catch(e){console.error('Firestore read error',e);}return null;}
+async function saveData(){const data={projects,debriefs,bucket,today:todayTasks,recurring,wellbeing,deferrals,funds,dailyLimit};try{await db.collection(FS_COLLECTION).doc(FS_DOC).set(data);}catch(e){console.error('Firestore write error',e);}}
 
 async function init(){
   const s=await loadData();
@@ -1993,7 +2029,16 @@ function renderStats(){
     <div class="stats-breakdown-row"><div class="stats-bd-left"><div class="stats-bd-dot" style="background:rgba(240,122,122,0.5);"></div><div class="stats-bd-label">Pushed</div></div><div class="stats-bd-right"><span class="stats-bd-avg">${avgPushed}/day</span><div class="stats-bd-track"><div class="stats-bd-fill" style="width:${Math.round(parseFloat(avgPushed)/maxAvg*100)}%;background:rgba(240,122,122,0.5);"></div></div></div></div>`;
 }
 
-init();
+let _appInitialized=false;
+auth.onAuthStateChanged(user=>{
+  const screen=document.getElementById('auth-screen');
+  if(user){
+    if(screen)screen.style.display='none';
+    if(!_appInitialized){_appInitialized=true;init();}
+  }else{
+    if(screen)screen.style.display='flex';
+  }
+});
 </script>
 </body>
 </html>
