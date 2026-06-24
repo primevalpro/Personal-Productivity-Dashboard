@@ -583,7 +583,7 @@ textarea:focus{border-color:var(--border2);}
 
 <!-- TOPBAR -->
 <div class="topbar">
-  <div class="topbar-logo">Personal OS<span>v6.0</span></div>
+  <div class="topbar-logo">Personal OS<span>v6.1</span></div>
   <div class="section-nav">
     <div class="section-btn active" id="sec-now" onclick="navSection('now',this)">Now</div>
     <div class="section-btn" id="sec-plan" onclick="navSection('plan',this)">Plan</div>
@@ -629,7 +629,7 @@ textarea:focus{border-color:var(--border2);}
           <div class="page-title">Projects &amp; recurring</div>
           <div class="page-sub">sorted by urgency — tightest first · <span style="color:var(--warn);">↻</span> recurring tasks in amber</div>
         </div>
-        <div style="display:flex;gap:6px;"><button class="add-btn" onclick="openFundModal()" style="border-color:rgba(122,180,240,0.3);color:#7ab4f0;">+ Fund</button><button class="add-btn accent-add" onclick="openRecModal()">+ Recurring</button></div>
+        <div style="display:flex;gap:6px;align-items:center;"><button class="icon-btn" onclick="document.getElementById('syllabus-import-input').click()">⬆ Import</button><button class="add-btn" onclick="openFundModal()" style="border-color:rgba(122,180,240,0.3);color:#7ab4f0;">+ Fund</button><button class="add-btn accent-add" onclick="openRecModal()">+ Recurring</button></div>
       </div>
     </div>
     <div class="metrics" id="metrics"></div>
@@ -709,6 +709,25 @@ textarea:focus{border-color:var(--border2);}
     <div id="bucket-list"></div>
   </div>
 </div>
+
+<!-- SYLLABUS IMPORT CONFLICT MODAL -->
+<div class="modal-backdrop" id="import-conflict-modal">
+  <div class="modal" style="max-width:460px;">
+    <div class="modal-title" id="import-conflict-title"></div>
+    <div class="modal-sub" id="import-conflict-body" style="margin-bottom:1.25rem;"></div>
+    <div class="modal-actions">
+      <button class="modal-cancel" onclick="importCancel()">Cancel</button>
+      <button class="modal-confirm" onclick="importMerge()" style="background:var(--warn-dim);border-color:rgba(240,200,106,0.3);color:var(--warn);">Merge</button>
+      <button class="modal-confirm" onclick="importReplaceAll()">Replace All</button>
+    </div>
+  </div>
+</div>
+
+<!-- IMPORT TOAST -->
+<div id="import-toast" style="display:none;position:fixed;bottom:1.5rem;left:50%;transform:translateX(-50%);z-index:300;padding:9px 18px;border-radius:8px;font-family:var(--mono);font-size:12px;white-space:nowrap;pointer-events:none;transition:opacity 0.2s;"></div>
+
+<!-- HIDDEN FILE INPUT FOR SYLLABUS IMPORT -->
+<input type="file" accept=".json" id="syllabus-import-input" style="display:none;" onchange="handleSyllabusImport(this)">
 
 <script>
 const firebaseConfig={
@@ -831,7 +850,7 @@ async function init(){
 
 function openModal(id){document.getElementById(id).classList.add('open');}
 function closeModal(id){document.getElementById(id).classList.remove('open');}
-['promote-modal','incomplete-modal','tomorrow-modal','rec-modal','add-from-modal','analyze-modal','value-entry-modal','fund-modal','fund-contrib-modal','cal-assign-modal','cal-day-panel'].forEach(id=>{const el=document.getElementById(id);if(el)el.addEventListener('click',function(e){if(e.target===this)closeModal(id);});});
+['promote-modal','incomplete-modal','tomorrow-modal','rec-modal','add-from-modal','analyze-modal','value-entry-modal','fund-modal','fund-contrib-modal','cal-assign-modal','cal-day-panel','import-conflict-modal'].forEach(id=>{const el=document.getElementById(id);if(el)el.addEventListener('click',function(e){if(e.target===this)closeModal(id);});});
 
 function getLocalKey(offset=0){const d=new Date();d.setDate(d.getDate()+offset);return`${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;}
 function getTodayKey(){return getLocalKey(0);}
@@ -1294,7 +1313,8 @@ function renderProjectCard(list,p){
       const dateLabel=c.scheduledDate?keyToDisplay(c.scheduledDate):'set date';
       const dateBadge=c.done?'':`<div class="chunk-date-badge${c.scheduledDate?' has-date':''}" onclick="toggleChunkDatePicker('${p.id}',${ci})" id="date-badge-${p.id}-${ci}">📅 ${dateLabel}</div><input type="date" class="chunk-date-input" id="date-picker-${p.id}-${ci}" style="display:none;" value="${c.scheduledDate||''}" onchange="setChunkDate('${p.id}',${ci},this.value)" onblur="hideChunkDatePicker('${p.id}',${ci})"/>`;
       const assignBtns=c.done?'':`<div class="chunk-actions"><button class="chunk-mini-btn" onclick="assignChunkDirect('${p.id}',${ci},'today')" id="btn-today-${p.id}-${ci}" style="${aToday?'color:var(--accent);border-color:rgba(200,240,122,0.4);':''}">${aToday?'✓ today':'today'}</button><button class="chunk-mini-btn" onclick="assignChunkDirect('${p.id}',${ci},'tomorrow')" id="btn-tmrw-${p.id}-${ci}" style="${aTmr?'color:var(--warn);border-color:rgba(240,200,106,0.4);':''}">${aTmr?'✓ tmrw':'tmrw'}</button></div>`;
-      chunksHtml+=`<div class="chunk-row"><input type="checkbox" class="chunk-cb" ${c.done?'checked':''} onchange="toggleChunk(${realIdx},${ci},this)"/><div class="chunk-body"><div class="chunk-text ${c.done?'done':''}">${c.label}</div>${c.note?`<div class="chunk-note">${c.note}</div>`:''}${dateBadge}</div>${assignBtns}</div>`;
+      const typeBadge=c.type?`<span style="font-family:var(--mono);font-size:9px;text-transform:uppercase;margin-right:5px;color:${c.type==='test'?'var(--danger)':c.type==='quiz'?'var(--warn)':c.type==='reading'?'var(--text3)':'var(--text2)'};">${c.type}</span>`:'';
+      chunksHtml+=`<div class="chunk-row"><input type="checkbox" class="chunk-cb" ${c.done?'checked':''} onchange="toggleChunk(${realIdx},${ci},this)"/><div class="chunk-body"><div class="chunk-text ${c.done?'done':''}">${typeBadge}${c.label}</div>${c.note?`<div class="chunk-note">${c.note}</div>`:''}${dateBadge}</div>${assignBtns}</div>`;
     });
   }
   const card=document.createElement('div');card.className='project-card';
@@ -1989,6 +2009,78 @@ function renderStats(){
     <div class="stats-breakdown-row"><div class="stats-bd-left"><div class="stats-bd-dot" style="background:var(--warn);"></div><div class="stats-bd-label">Standalone</div></div><div class="stats-bd-right"><span class="stats-bd-avg">${avgSa}/day</span><div class="stats-bd-track"><div class="stats-bd-fill" style="width:${Math.round(parseFloat(avgSa)/maxAvg*100)}%;background:var(--warn);"></div></div></div></div>
     <div class="stats-breakdown-row"><div class="stats-bd-left"><div class="stats-bd-dot" style="background:rgba(200,240,122,0.5);"></div><div class="stats-bd-label">Recurring</div></div><div class="stats-bd-right"><span class="stats-bd-avg">${avgRec}/day</span><div class="stats-bd-track"><div class="stats-bd-fill" style="width:${Math.round(parseFloat(avgRec)/maxAvg*100)}%;background:rgba(200,240,122,0.5);"></div></div></div></div>
     <div class="stats-breakdown-row"><div class="stats-bd-left"><div class="stats-bd-dot" style="background:rgba(240,122,122,0.5);"></div><div class="stats-bd-label">Pushed</div></div><div class="stats-bd-right"><span class="stats-bd-avg">${avgPushed}/day</span><div class="stats-bd-track"><div class="stats-bd-fill" style="width:${Math.round(parseFloat(avgPushed)/maxAvg*100)}%;background:rgba(240,122,122,0.5);"></div></div></div></div>`;
+}
+
+// ── SYLLABUS IMPORT ──
+function showToast(msg,isError=false){
+  const t=document.getElementById('import-toast');if(!t)return;
+  t.textContent=msg;
+  if(isError){t.style.background='var(--danger-dim)';t.style.color='var(--danger)';t.style.border='1px solid rgba(240,122,122,0.3)';}
+  else{t.style.background='var(--accent-dim)';t.style.color='var(--accent)';t.style.border='1px solid rgba(200,240,122,0.2)';}
+  t.style.display='block';
+  clearTimeout(t._tid);
+  t._tid=setTimeout(()=>{t.style.display='none';},3500);
+}
+
+let _importData=null;
+
+function handleSyllabusImport(input){
+  const file=input.files[0];input.value='';if(!file)return;
+  const reader=new FileReader();
+  reader.onload=function(e){
+    let data;
+    try{data=JSON.parse(e.target.result);}
+    catch(err){showToast('Invalid file — could not parse JSON.',true);return;}
+    if(data.import_type!=='syllabus'){showToast('Invalid import file type.',true);return;}
+    if(!Array.isArray(data.chunks)||!data.chunks.length){showToast('No tasks found in import file.',true);return;}
+    _importData=data;
+    const className=(data.class||'').trim();
+    const existing=projects.find(p=>!p.archived&&p.title.trim().toLowerCase()===className.toLowerCase());
+    if(!existing){
+      const id=className.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-+|-+$/g,'');
+      const lastDue=(data.chunks[data.chunks.length-1]||{}).due||'';
+      projects.push({id,title:className,due:lastDue,dueBeforeDay:false,chunks:data.chunks.map(c=>({label:c.label,due:c.due||'',type:c.type||undefined,done:false}))});
+      saveData();renderProjects();
+      showToast(`✓ ${className} project created with ${data.chunks.length} tasks imported.`);
+      _importData=null;
+    } else {
+      const dupeCount=data.chunks.filter(ic=>existing.chunks.some(ec=>ec.label.trim().toLowerCase()===ic.label.trim().toLowerCase()&&(ec.due||'').trim().toLowerCase()===(ic.due||'').trim().toLowerCase())).length;
+      const newCount=data.chunks.length-dupeCount;
+      document.getElementById('import-conflict-title').textContent=`"${className}" already has tasks`;
+      document.getElementById('import-conflict-body').textContent=`Found ${existing.chunks.length} existing task${existing.chunks.length!==1?'s':''}. ${newCount} incoming task${newCount!==1?'s':''} are new, ${dupeCount} are duplicate${dupeCount!==1?'s':''}.`;
+      openModal('import-conflict-modal');
+    }
+  };
+  reader.readAsText(file);
+}
+
+function importMerge(){
+  if(!_importData)return;
+  const className=(_importData.class||'').trim();
+  const existing=projects.find(p=>!p.archived&&p.title.trim().toLowerCase()===className.toLowerCase());
+  if(!existing)return;
+  const newChunks=_importData.chunks.filter(ic=>!existing.chunks.some(ec=>ec.label.trim().toLowerCase()===ic.label.trim().toLowerCase()&&(ec.due||'').trim().toLowerCase()===(ic.due||'').trim().toLowerCase()));
+  existing.chunks.push(...newChunks.map(c=>({label:c.label,due:c.due||'',type:c.type||undefined,done:false})));
+  saveData();closeModal('import-conflict-modal');renderProjects();
+  showToast(`✓ ${newChunks.length} new task${newChunks.length!==1?'s':''} added to ${className}.`);
+  _importData=null;
+}
+
+function importReplaceAll(){
+  if(!_importData)return;
+  const className=(_importData.class||'').trim();
+  const existing=projects.find(p=>!p.archived&&p.title.trim().toLowerCase()===className.toLowerCase());
+  if(!existing)return;
+  const n=_importData.chunks.length;
+  existing.chunks=_importData.chunks.map(c=>({label:c.label,due:c.due||'',type:c.type||undefined,done:false}));
+  saveData();closeModal('import-conflict-modal');renderProjects();
+  showToast(`✓ ${className} tasks replaced with ${n} imported task${n!==1?'s':''}.`);
+  _importData=null;
+}
+
+function importCancel(){
+  _importData=null;
+  closeModal('import-conflict-modal');
 }
 
 let _appInitialized=false;
