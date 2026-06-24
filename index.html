@@ -2012,6 +2012,11 @@ function renderStats(){
 }
 
 // ── SYLLABUS IMPORT ──
+function importDueToKey(str){
+  if(!str)return undefined;
+  const d=parseMonthDay(str);if(!d)return undefined;
+  return`${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
+}
 function showToast(msg,isError=false){
   const t=document.getElementById('import-toast');if(!t)return;
   t.textContent=msg;
@@ -2039,7 +2044,7 @@ function handleSyllabusImport(input){
     if(!existing){
       const id=className.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-+|-+$/g,'');
       const lastDue=(data.chunks[data.chunks.length-1]||{}).due||'';
-      projects.push({id,title:className,due:lastDue,dueBeforeDay:false,chunks:data.chunks.map(c=>({label:c.label,due:c.due||'',type:c.type||undefined,done:false}))});
+      projects.push({id,title:className,due:lastDue,dueBeforeDay:false,chunks:data.chunks.map(c=>({label:c.label,scheduledDate:importDueToKey(c.due),type:c.type||undefined,done:false}))});
       saveData();renderProjects();
       showToast(`✓ ${className} project created with ${data.chunks.length} tasks imported.`);
       _importData=null;
@@ -2060,7 +2065,7 @@ function importMerge(){
   const existing=projects.find(p=>!p.archived&&p.title.trim().toLowerCase()===className.toLowerCase());
   if(!existing)return;
   const newChunks=_importData.chunks.filter(ic=>!existing.chunks.some(ec=>ec.label.trim().toLowerCase()===ic.label.trim().toLowerCase()&&(ec.due||'').trim().toLowerCase()===(ic.due||'').trim().toLowerCase()));
-  existing.chunks.push(...newChunks.map(c=>({label:c.label,due:c.due||'',type:c.type||undefined,done:false})));
+  existing.chunks.push(...newChunks.map(c=>({label:c.label,scheduledDate:importDueToKey(c.due),type:c.type||undefined,done:false})));
   saveData();closeModal('import-conflict-modal');renderProjects();
   showToast(`✓ ${newChunks.length} new task${newChunks.length!==1?'s':''} added to ${className}.`);
   _importData=null;
@@ -2072,7 +2077,7 @@ function importReplaceAll(){
   const existing=projects.find(p=>!p.archived&&p.title.trim().toLowerCase()===className.toLowerCase());
   if(!existing)return;
   const n=_importData.chunks.length;
-  existing.chunks=_importData.chunks.map(c=>({label:c.label,due:c.due||'',type:c.type||undefined,done:false}));
+  existing.chunks=_importData.chunks.map(c=>({label:c.label,scheduledDate:importDueToKey(c.due),type:c.type||undefined,done:false}));
   saveData();closeModal('import-conflict-modal');renderProjects();
   showToast(`✓ ${className} tasks replaced with ${n} imported task${n!==1?'s':''}.`);
   _importData=null;
